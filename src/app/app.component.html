@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="columns">
+    <div class="column is-two-thirds">
+      <section class="section">
+        <div class="box is-size-7">
+          <h1 class="title">Employment Experience</h1>
+          <div class="content" *ngFor="let job of jobs">
+            <div class="level is-marginless">
+              <div class="level-left">
+                <h2 class="is-marginless">{{job.title}}</h2>
+              </div>
+              <div class="level-right" style="Vertical-Align:bottom">
+                <p class="has-text-weight-light">{{job.startDate | date}} - {{(job.endDate | date) || "Present"}}</p>
+              </div>
+            </div>
+            <div class="level is-marginless">
+              <div class="level-left">
+                <p class="has-text-weight-light">{{job.employer}}</p>
+              </div>
+              <div class="level-right">
+                <p class="has-text-weight-light">{{job.location}}</p>
+              </div>
+            </div>
+            <p class="is-marginless has-text-justified">{{job.jobSummary}}</p>
+            <ul class="has-text-justified" style="margin-top:0;">
+              <li *ngFor="let role of job.jobRoles">{{role.Role}}</li>
+            </ul>
+            <div *ngIf="job.jobTechnologies">
+              <h4>Technology Stack</h4>
+              <div class="tags">
+                <!-- <ng-template ngFor let-tech [ngForOf]="job.jobTechnologies">
+                      <span class="tag">{{tech.Technology}}</span>
+                    </ng-template> -->
+                <!-- <span class="tag" *ngFor="let tech of job.jobTechnologies" [style]="color:"{{tech.Colored}}>{{tech.Technology}}</span> -->
+                <span class="tag" *ngFor="let tech of job.jobTechnologies">{{tech.Technology}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section">
+        <progress class="progress" value="98" max="100">Structured Query Language</progress>
+        <progress class="progress" value="90" max="100">.Net Framework (3.5 +)</progress>
+        <progress class="progress" value="85" max="100">WinForms</progress>
+      </section> -->
+    </div>
+    <div class="container column is-one-third">
+      <section class="section">
+        <div class="box is-size-7">
+          <figure class="image">
+            <img src="assets/images/headShot.png">
+          </figure>
+          <h1 class="title has-text-centered">Keith Stolte</h1>
+          <ul class="fa-ul">
+            <li class="email">
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:keithrstolte@gmail.com">keithrstolte@gmail.com</a>
+            </li>
+            <li class="github">
+              <i class="fa fa-github" style="color:#333"></i>
+              <a href="https://www.github.com/kstolteYDI" target="_blank">github.com/kstolteYDI</a>
+            </li>
+            <!-- <li class="website"><i class="fa fa-globe"></i><a href="" target="_blank">portfoliosite.com</a></li> -->
+            <li class="linkedin">
+              <i class="fa fa-linkedin-square" style="color:#0077B5;"></i>
+              <a href="linkedin.com/in/keithrstolte" target="_blank">Profile</a>
+            </li>
+            <li class="twitter">
+              <i class="fa fa-twitter" style="color:#1DA1F2;"></i>
+              <a href="https://twitter.com/sqltrailblazer" target="_blank">@sqlTrailblazer</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
