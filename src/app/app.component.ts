@@ -23,27 +23,27 @@ export class Technologies {
 
 const MSSQL: Technologies = {
   Technology: 'MSSQL Server',
-  Color: 'red'
+  Color: 'is-danger'
 }
 
 const NetFramework: Technologies = {
   Technology: '.Net Framework',
-  Color: 'purple'
+  Color: 'is-info'
 }
 
 const NetCore: Technologies = {
   Technology: '.Net Core 2.0',
-  Color: 'green'
+  Color: 'is-success'
 }
 
 const SharePoint: Technologies = {
   Technology: 'SharePoint',
-  Color: 'yellow'
+  Color: 'is-warning'
 }
 
 const AppleComp: Technologies = {
   Technology: 'MacOS',
-  Color: 'Silver'
+  Color: 'is-dark'
 }
 
 const JOBS: Job[] = [
@@ -67,7 +67,7 @@ const JOBS: Job[] = [
       MSSQL,
       NetFramework,
       NetCore,
-      { Technology: 'GitHub', Color: '#333' },
+      { Technology: 'GitHub', Color: 'is-github' },
       { Technology: 'Git'},
       { Technology: 'Angular' },
       { Technology: 'WinForms' },

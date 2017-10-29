@@ -1,12 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "variables";
-$blue:    hsl(14,  100%, 53%);
-$primary: $blue;
-$linkedin: #0077B5;
-$linkedin-inverted: #FFFFFF;
-$twitter: #1DA1F2;
-$github: #222222;
-
 @import "node_modules/bulma/bulma";
 @import "fonts";
