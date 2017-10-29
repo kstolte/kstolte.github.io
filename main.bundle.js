@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"columns\">\n    <div class=\"column is-two-thirds\">\n      <section class=\"section\">\n        <div class=\"box is-size-7\">\n          <h1 class=\"title\">Employment Experience</h1>\n          <div class=\"content\" *ngFor=\"let job of jobs\">\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <h2 class=\"is-marginless\">{{job.title}}</h2>\n              </div>\n              <div class=\"level-right\" style=\"Vertical-Align:bottom\">\n                <p class=\"has-text-weight-light\">{{job.startDate | date}} - {{(job.endDate | date) || \"Present\"}}</p>\n              </div>\n            </div>\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <p class=\"has-text-weight-light\">{{job.employer}}</p>\n              </div>\n              <div class=\"level-right\">\n                <p class=\"has-text-weight-light\">{{job.location}}</p>\n              </div>\n            </div>\n            <p class=\"is-marginless has-text-justified\">{{job.jobSummary}}</p>\n            <ul class=\"has-text-justified\" style=\"margin-top:0;\">\n              <li *ngFor=\"let role of job.jobRoles\">{{role.Role}}</li>\n            </ul>\n            <div *ngIf=\"job.jobTechnologies\">\n              <h4>Technology Stack</h4>\n              <div class=\"tags\">\n                <!-- <ng-template ngFor let-tech [ngForOf]=\"job.jobTechnologies\">\n                      <span class=\"tag\">{{tech.Technology}}</span>\n                    </ng-template> -->\n                <!-- <span class=\"tag\" *ngFor=\"let tech of job.jobTechnologies\" [style]=\"color:\"{{tech.Colored}}>{{tech.Technology}}</span> -->\n                <span class=\"tag\" *ngFor=\"let tech of job.jobTechnologies\">{{tech.Technology}}</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n      <!-- <section class=\"section\">\n        <progress class=\"progress\" value=\"98\" max=\"100\">Structured Query Language</progress>\n        <progress class=\"progress\" value=\"90\" max=\"100\">.Net Framework (3.5 +)</progress>\n        <progress class=\"progress\" value=\"85\" max=\"100\">WinForms</progress>\n      </section> -->\n    </div>\n    <div class=\"container column is-one-third\">\n      <section class=\"section\">\n        <div class=\"box is-size-7\">\n          <figure class=\"image\">\n            <img src=\"assets/images/headShot.png\">\n          </figure>\n          <h1 class=\"title has-text-centered\">Keith Stolte</h1>\n          <ul class=\"fa-ul\">\n            <li class=\"email\">\n              <i class=\"fa fa-envelope\"></i>\n              <a href=\"mailto:keithrstolte@gmail.com\">keithrstolte@gmail.com</a>\n            </li>\n            <li class=\"github\">\n              <i class=\"fa fa-github\" style=\"color:#333\"></i>\n              <a href=\"https://www.github.com/kstolteYDI\" target=\"_blank\">github.com/kstolteYDI</a>\n            </li>\n            <!-- <li class=\"website\"><i class=\"fa fa-globe\"></i><a href=\"\" target=\"_blank\">portfoliosite.com</a></li> -->\n            <li class=\"linkedin\">\n              <i class=\"fa fa-linkedin-square\" style=\"color:#0077B5;\"></i>\n              <a href=\"linkedin.com/in/keithrstolte\" target=\"_blank\">Profile</a>\n            </li>\n            <li class=\"twitter\">\n              <i class=\"fa fa-twitter\" style=\"color:#1DA1F2;\"></i>\n              <a href=\"https://twitter.com/sqltrailblazer\" target=\"_blank\">@sqlTrailblazer</a>\n            </li>\n          </ul>\n        </div>\n      </section>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"columns\">\n    <div class=\"column is-two-thirds\">\n      <section class=\"section\">\n        <div class=\"box is-size-7\">\n          <h1 class=\"title\">Employment Experience</h1>\n          <div class=\"content\" *ngFor=\"let job of jobs\">\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <h2 class=\"is-marginless\">{{job.title}}</h2>\n              </div>\n              <div class=\"level-right\" style=\"Vertical-Align:bottom\">\n                <p class=\"has-text-weight-light\">{{job.startDate | date}} - {{(job.endDate | date) || \"Present\"}}</p>\n              </div>\n            </div>\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <p class=\"has-text-weight-light\">{{job.employer}}</p>\n              </div>\n              <div class=\"level-right\">\n                <p class=\"has-text-weight-light\">{{job.location}}</p>\n              </div>\n            </div>\n            <p class=\"is-marginless has-text-justified\">{{job.jobSummary}}</p>\n            <ul class=\"has-text-justified\" style=\"margin-top:0;\">\n              <li *ngFor=\"let role of job.jobRoles\">{{role.Role}}</li>\n            </ul>\n            <div *ngIf=\"job.jobTechnologies\">\n              <h4>Technology Stack</h4>\n              <div class=\"tags\">\n                <!-- <ng-template ngFor let-tech [ngForOf]=\"job.jobTechnologies\">\n                      <span class=\"tag\">{{tech.Technology}}</span>\n                    </ng-template> -->\n                <!-- <span class=\"tag\" *ngFor=\"let tech of job.jobTechnologies\" [style]=\"color:\"{{tech.Colored}}>{{tech.Technology}}</span> -->\n                <span class=\"tag {{tech.Color}}\" *ngFor=\"let tech of job.jobTechnologies\">{{tech.Technology}}</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n      <!-- <section class=\"section\">\n        <progress class=\"progress\" value=\"98\" max=\"100\">Structured Query Language</progress>\n        <progress class=\"progress\" value=\"90\" max=\"100\">.Net Framework (3.5 +)</progress>\n        <progress class=\"progress\" value=\"85\" max=\"100\">WinForms</progress>\n      </section> -->\n    </div>\n    <div class=\"container column is-one-third\">\n      <section class=\"section\">\n        <div class=\"box is-size-7\">\n          <figure class=\"image\">\n            <img src=\"assets/images/headShot.png\">\n          </figure>\n          <h1 class=\"title has-text-centered\">Keith Stolte</h1>\n          <ul class=\"fa-ul\">\n            <li class=\"email\">\n              <i class=\"fa fa-envelope\"></i>\n              <a href=\"mailto:keithrstolte@gmail.com\">keithrstolte@gmail.com</a>\n            </li>\n            <li class=\"github\">\n              <i class=\"fa fa-github has-text-github\"></i>\n              <a href=\"https://www.github.com/kstolteYDI\" target=\"_blank\">github.com/kstolteYDI</a>\n            </li>\n            <!-- <li class=\"website\"><i class=\"fa fa-globe\"></i><a href=\"\" target=\"_blank\">portfoliosite.com</a></li> -->\n            <li class=\"linkedin\">\n              <i class=\"fa fa-linkedin-square has-text-linkedin\"></i>\n              <a href=\"linkedin.com/in/keithrstolte\" target=\"_blank\">Profile</a>\n            </li>\n            <li class=\"twitter\">\n              <i class=\"fa fa-twitter has-text-twitter\"></i>\n              <a href=\"https://twitter.com/sqltrailblazer\" target=\"_blank\">@sqlTrailblazer</a>\n            </li>\n          </ul>\n        </div>\n      </section>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -78,65 +78,65 @@ var Technologies = (function () {
 
 var MSSQL = {
     Technology: 'MSSQL Server',
-    Color: 'red'
+    Color: 'is-sql'
 };
 var NetFramework = {
     Technology: '.Net Framework',
-    Color: 'purple'
+    Color: 'is-netFramework'
 };
 var NetCore = {
     Technology: '.Net Core 2.0',
-    Color: 'green'
+    Color: 'is-netFramework2'
 };
 var SharePoint = {
     Technology: 'SharePoint',
-    Color: 'yellow'
+    Color: 'is-warning'
 };
 var AppleComp = {
     Technology: 'MacOS',
-    Color: 'Silver'
+    Color: 'is-dark'
 };
 var JOBS = [
     {
         title: 'Software Developer',
         employer: 'Yellow Dog Software',
-        location: 'Norfolk, Va',
+        location: 'Norfolk, VA',
         startDate: new Date('2016-11-01'),
         endDate: null,
-        jobSummary: "Develop and maintain components of an inventory management software solution.\n     The solution is based on a MSSQL database backend with a Long Term Support WinForms Client application.\n     Recent development has been based around new feature implementation in WinForms Client, Online Angular\n     Web App, .Net Core API, and iOS/Android Applications.",
+        jobSummary: "Develop and maintain components of an inventory management software solution.\n     The solution is based on a MSSQL database backend with a Long-Term Support WinForms Client application.\n     Recent development has been based around new feature implementation in WinForms Client, Online Angular\n     Web App, .Net Core API, and iOS/Android Applications.",
         jobRoles: [
             { Role: 'Resolve all issues with software and final escalation point for end users.' },
             { Role: 'Conceptualize, plan, and execute new features and technology into the software solution.' },
             { Role: 'Create system integrations between Yellow Dog Inventory Systems and Third Party.' },
-            { Role: 'Architected a tool for Support and Implementation groups to track real time system status to provide proactive support and client assistance.' }
+            { Role: 'Architected a tool for Support and Implementation Groups to track real time system status to deliver proactive support and client assistance.' }
         ],
         jobTechnologies: [
             MSSQL,
             NetFramework,
             NetCore,
-            { Technology: 'GitHub', Color: '#333' },
+            { Technology: 'GitHub', Color: 'is-github' },
             { Technology: 'Git' },
             { Technology: 'Angular' },
             { Technology: 'WinForms' },
             { Technology: 'REST APIs' },
-            { Technology: 'GraphQL', Color: '#E10098' },
+            { Technology: 'GraphQL', Color: 'is-graphql' },
             AppleComp
         ]
     },
     {
         title: 'DBA / IT Manager',
         employer: 'Yellow Dog Software',
-        location: 'Norfolk, Va',
+        location: 'Norfolk, VA',
         startDate: new Date('2016-05-15'),
         endDate: new Date('2016-10-31'),
-        jobSummary: "Served in a DevOps Role for a Software Development Organization.\n    Served as the escalation point for support tickets to provide fixes and fact finding\n    prior to being escalated to the development group. ",
+        jobSummary: "Served in a DevOps Role for a Software Development Organization.\n    Performed as the escalation point for support tickets to provide fixes and fact finding\n    prior to being escalated to the development group. ",
         jobRoles: [
             { Role: 'Maintained and supported 50+ physical servers that were but onsite and hosted through a third party datacenter.' },
-            { Role: 'Provide Tier 4 support for escalation of tickets.' },
-            { Role: 'Identify opportunities for database improvement in support of the software.' },
-            { Role: 'Compose, Release, and Apply SQL Scripts to production environments to resolve bugs or optimize client systems.' },
+            { Role: 'Implemented Tier 4 support for escalation of tickets.' },
+            { Role: 'Pinpointed opportunities for database improvement in support of the software.' },
+            { Role: 'Composed, released, and applied SQL Scripts to production environments to resolve bugs or optimize client systems.' },
             { Role: 'Assisted support team with timely ticket resolution.' },
-            { Role: 'Set up a Network Management System to track uptime and maintained an uptime of 99.99% across the server and network infrustructure.' }
+            { Role: 'Installed a Network Management System to track uptime and maintained an uptime of 99.99% across the server and network infrastructure.' }
         ],
         jobTechnologies: [
             MSSQL,
@@ -147,20 +147,20 @@ var JOBS = [
     {
         title: 'Application Support Analyst',
         employer: 'Gold Key | PHR Hotels & Resorts',
-        location: 'Virginia Beach, Va',
+        location: 'Virginia Beach, VA',
         startDate: new Date('2015-06-01'),
         endDate: new Date('2016-05-15'),
-        jobSummary: 'The Application Support Analyst is primarily responsible for implementing and maintaining the Software items in the Service ' +
+        jobSummary: 'Implemented and maintained the Software items in the Service ' +
             'Portfolio and Pipeline. This includes tier 2 & 3 end user support, diagnosing software problems and scheduled maintenance. ' +
             'In addition, they provide advanced system administration/configuration tasks and consult customers on proposed changes ' +
-            'within In House (Custom) Applications and 3rd party COTS software products.',
+            'within In House (Custom) Applications and third-party COTS software products.',
         jobRoles: [
-            { Role: 'Develop SQL reports and queries for IT Department and customer use.' },
-            { Role: 'Maintain SharePoint site with on premise SharePoint Server Farm.' },
-            { Role: 'Develop multifaceted SharePoint sites assist customers with storing and cataloging documents, data, and processes. ' },
-            { Role: 'Provide 3rd tier support for end user support.' },
-            { Role: 'Conduct deep dives into software application logic while troubleshooting and perform analysis on complex application usage scenarios.' },
-            { Role: 'Provide advanced system administration/configuration tasks and consult customers on proposed changes within In House (Custom) Applications and 3rd party COTS software products.' }
+            { Role: 'Developed SQL reports and queries for IT Department and customer use.' },
+            { Role: 'Maintained SharePoint site with on premise SharePoint Server Farm.' },
+            { Role: 'Developed multifaceted SharePoint sites assist customers with storing and cataloging documents, data, and processes. ' },
+            { Role: 'Provided 3rd tier support for end user support.' },
+            { Role: 'Conducted deep dives into software application logic while troubleshooting and perform analysis on complex application usage scenarios.' },
+            { Role: 'Provided advanced system administration/configuration tasks and consult customers on proposed changes within In House (Custom) Applications and 3rd party COTS software products.' }
         ],
         jobTechnologies: [
             MSSQL,
@@ -181,18 +181,18 @@ var JOBS = [
     {
         title: 'Support Tech I',
         employer: 'Gold Key | PHR Hotels & Resorts',
-        location: 'Virginia Beach, Va',
+        location: 'Virginia Beach, VA',
         startDate: new Date('2013-03-15'),
         endDate: new Date('2015-06-01'),
-        jobSummary: 'Provide onsite and phone support to all levels of employees',
+        jobSummary: 'Provided onsite and phone support to all levels of employees',
         jobRoles: [
-            { Role: 'Develop low to medium level SQL reports and queries for IT Department and customer use.' },
-            { Role: 'Provide desktop and server side support for multiple hardware configurations, operating systems, and applications.' },
-            { Role: 'Maintain SharePoint site with on premise SharePoint Server Farm.' },
-            { Role: 'Conduct deep dives into software application logic while troubleshooting and perform analysis on complex application usage scenarios.' },
+            { Role: 'Developed low to medium level SQL reports and queries for IT Department and customer use.' },
+            { Role: 'Executed desktop and server support for multiple hardware configurations, operating systems, and applications.' },
+            { Role: 'Maintained SharePoint site with on premise SharePoint Server Farm.' },
+            { Role: 'Conducted deep dives into software application logic while troubleshooting and perform analysis on complex application usage scenarios.' },
             { Role: 'Setup and delivered a SharePoint site that securely stores all associate personnel records.' },
             { Role: 'Troubleshoot, maintain, and support multiple internal applications on a variety of platforms and frameworks.' },
-            { Role: 'Implement complex applications and products to outlets along the Va Beach Oceanfront.' }
+            { Role: 'Implement complex applications and products to outlets along the Virginia Beach Oceanfront.' }
         ],
         jobTechnologies: [
             MSSQL,
@@ -226,12 +226,12 @@ var JOBS = [
     {
         title: 'Production Assistant',
         employer: 'Studio Center Total Production',
-        location: 'Norfolk, Va',
+        location: 'Norfolk, VA',
         startDate: new Date('2007-05-20'),
         endDate: new Date('2013-03-15'),
         jobSummary: "Telecommuting job to assist with an enterprise wide migration from Lotus Notes to Microsoft SharePoint.\n                  My components of the project was successful and termination was based on the ending of the project.",
         jobRoles: [
-            { Role: 'Created a Collaboration tool to track the status of contacting talent in various localities and time zones.' },
+            { Role: 'Created a Collaboration tool to track the status of contacting talent in VArious localities and time zones.' },
             { Role: 'Provide recording services for auditioning voice talent prior to being booked by a client.' },
             { Role: 'Troubleshoot Audio Routing and Patching issues.' },
             { Role: 'Provide expert feedback and guide talent to performing at their best.' }
@@ -245,7 +245,7 @@ var JOBS = [
     {
         title: 'Audio Engineer',
         employer: 'Roper Performing Arts Center',
-        location: 'Norfolk, Va',
+        location: 'Norfolk, VA',
         startDate: new Date('2009-02-01'),
         endDate: new Date('2012-06-15'),
         jobSummary: "",
@@ -325,8 +325,13 @@ AppModule = __decorate([
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
 var environment = {
-    production: true
+    production: false
 };
 //# sourceMappingURL=environment.js.map
 

@@ -23,17 +23,17 @@ export class Technologies {
 
 const MSSQL: Technologies = {
   Technology: 'MSSQL Server',
-  Color: 'is-danger'
+  Color: 'is-sql'
 }
 
 const NetFramework: Technologies = {
   Technology: '.Net Framework',
-  Color: 'is-info'
+  Color: 'is-netFramework'
 }
 
 const NetCore: Technologies = {
   Technology: '.Net Core 2.0',
-  Color: 'is-success'
+  Color: 'is-netFramework2'
 }
 
 const SharePoint: Technologies = {
@@ -72,7 +72,7 @@ const JOBS: Job[] = [
       { Technology: 'Angular' },
       { Technology: 'WinForms' },
       { Technology: 'REST APIs' },
-      { Technology: 'GraphQL', Color: '#E10098' },
+      { Technology: 'GraphQL', Color: 'is-graphql' },
       AppleComp
     ]
   },
