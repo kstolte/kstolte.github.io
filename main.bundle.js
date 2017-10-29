@@ -86,7 +86,7 @@ var NetFramework = {
 };
 var NetCore = {
     Technology: '.Net Core 2.0',
-    Color: 'is-netFramework2'
+    Color: 'is-netFramework'
 };
 var SharePoint = {
     Technology: 'SharePoint',
@@ -165,7 +165,7 @@ var JOBS = [
         jobTechnologies: [
             MSSQL,
             SharePoint,
-            { Technology: 'Visual Basic' },
+            { Technology: 'Visual Basic', Color: 'is-netFramework' },
             { Technology: 'WireShark' },
             { Technology: 'Juniper Networks' },
             { Technology: 'POSiTouch' },
@@ -197,7 +197,7 @@ var JOBS = [
         jobTechnologies: [
             MSSQL,
             SharePoint,
-            { Technology: 'Visual Basic' },
+            { Technology: 'Visual Basic', Color: 'is-netFramework' },
             { Technology: 'WireShark' },
             { Technology: 'Juniper Networks' },
             { Technology: 'POSiTouch' },

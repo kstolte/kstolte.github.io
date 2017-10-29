@@ -10,6 +10,8 @@ $sql: $red;
 $sql-invert: findColorInvert($sql);
 $netFramework: $purple;
 $netFramework-invert: findColorInvert($netFramework);
+$graphql: #C62F94;
+$graphql-invert: findColorInvert($graphql);
 
 // Add new color variables to the color map.
 $colors: map-merge($colors, ("twitter":($twitter, $twitter-invert)));
@@ -17,4 +19,4 @@ $colors: map-merge($colors, ("linkedin": ($linkedin, $linkedin-invert)));
 $colors: map-merge($colors, ("github": ($github, $github-invert)));
 $colors: map-merge($colors, ("sql": ($sql, $sql-invert)));
 $colors: map-merge($colors, ("netFramework": ($netFramework, $netFramework-invert)));
-
+$colors: map-merge($colors, ("graphql": ($graphql, $graphql-invert)));

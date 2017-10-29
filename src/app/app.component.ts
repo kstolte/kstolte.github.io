@@ -33,7 +33,7 @@ const NetFramework: Technologies = {
 
 const NetCore: Technologies = {
   Technology: '.Net Core 2.0',
-  Color: 'is-netFramework2'
+  Color: 'is-netFramework'
 }
 
 const SharePoint: Technologies = {
@@ -121,7 +121,7 @@ const JOBS: Job[] = [
     jobTechnologies: [
       MSSQL,
       SharePoint,
-      { Technology: 'Visual Basic' },
+      { Technology: 'Visual Basic', Color: 'is-netFramework' },
       { Technology: 'WireShark' },
       { Technology: 'Juniper Networks' },
       { Technology: 'POSiTouch' },
@@ -153,7 +153,7 @@ const JOBS: Job[] = [
     jobTechnologies: [
       MSSQL,
       SharePoint,
-      { Technology: 'Visual Basic' },
+      { Technology: 'Visual Basic', Color: 'is-netFramework' },
       { Technology: 'WireShark' },
       { Technology: 'Juniper Networks' },
       { Technology: 'POSiTouch' },
