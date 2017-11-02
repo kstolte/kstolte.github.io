@@ -1,9 +1,15 @@
 <div class="container">
   <div class="columns">
     <div class="column is-two-thirds">
-      <section class="section">
-        <div class="box is-size-7">
-          <h1 class="title">Employment Experience</h1>
+      <div class="hero is-info">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">Employment Experience</h1>
+          </div>
+        </div>
+      </div>
+      <section class="box section">
+        <div class="is-size-6">
           <div class="content" *ngFor="let job of jobs">
             <div class="level is-marginless">
               <div class="level-left">
@@ -28,25 +34,16 @@
             <div *ngIf="job.jobTechnologies">
               <h4>Technology Stack</h4>
               <div class="tags">
-                <!-- <ng-template ngFor let-tech [ngForOf]="job.jobTechnologies">
-                      <span class="tag">{{tech.Technology}}</span>
-                    </ng-template> -->
-                <!-- <span class="tag" *ngFor="let tech of job.jobTechnologies" [style]="color:"{{tech.Colored}}>{{tech.Technology}}</span> -->
                 <span class="tag {{tech.Color}}" *ngFor="let tech of job.jobTechnologies">{{tech.Technology}}</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="section">
-        <progress class="progress" value="98" max="100">Structured Query Language</progress>
-        <progress class="progress" value="90" max="100">.Net Framework (3.5 +)</progress>
-        <progress class="progress" value="85" max="100">WinForms</progress>
-      </section> -->
     </div>
     <div class="container column is-one-third">
-      <section class="section">
-        <div class="box is-size-7">
+      <section class="box section">
+        <div class="is-size-6">
           <figure class="image">
             <img src="assets/images/headShot.png">
           </figure>
@@ -60,7 +57,6 @@
               <i class="fa fa-github has-text-github"></i>
               <a href="https://www.github.com/kstolteYDI" target="_blank">github.com/kstolteYDI</a>
             </li>
-            <!-- <li class="website"><i class="fa fa-globe"></i><a href="" target="_blank">portfoliosite.com</a></li> -->
             <li class="linkedin">
               <i class="fa fa-linkedin-square has-text-linkedin"></i>
               <a href="linkedin.com/in/keithrstolte" target="_blank">Profile</a>
@@ -70,6 +66,25 @@
               <a href="https://twitter.com/sqltrailblazer" target="_blank">@sqlTrailblazer</a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="box hero is-small is-github">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title is-bold">
+              <i class="fa fa-github"></i>
+              GitHub
+            </h1>
+            <h2 class="subtitle">Contributed Repositories</h2>
+            <article class="media" *ngFor="let repo of contributedRepo.contributedRepositories.edges">
+              <figure class="media-left image is-32x32">
+                  <img src="{{repo.node.owner.avatarUrl}}" />
+              </figure>
+              <div class="media-content">
+                  <a href="{{repo.node.url}}" target="_blank">{{repo.node.owner.login}} - {{repo.node.name}}</a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </div>

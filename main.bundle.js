@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"columns\">\n    <div class=\"column is-two-thirds\">\n      <section class=\"section\">\n        <div class=\"box is-size-7\">\n          <h1 class=\"title\">Employment Experience</h1>\n          <div class=\"content\" *ngFor=\"let job of jobs\">\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <h2 class=\"is-marginless\">{{job.title}}</h2>\n              </div>\n              <div class=\"level-right\" style=\"Vertical-Align:bottom\">\n                <p class=\"has-text-weight-light\">{{job.startDate | date}} - {{(job.endDate | date) || \"Present\"}}</p>\n              </div>\n            </div>\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <p class=\"has-text-weight-light\">{{job.employer}}</p>\n              </div>\n              <div class=\"level-right\">\n                <p class=\"has-text-weight-light\">{{job.location}}</p>\n              </div>\n            </div>\n            <p class=\"is-marginless has-text-justified\">{{job.jobSummary}}</p>\n            <ul class=\"has-text-justified\" style=\"margin-top:0;\">\n              <li *ngFor=\"let role of job.jobRoles\">{{role.Role}}</li>\n            </ul>\n            <div *ngIf=\"job.jobTechnologies\">\n              <h4>Technology Stack</h4>\n              <div class=\"tags\">\n                <!-- <ng-template ngFor let-tech [ngForOf]=\"job.jobTechnologies\">\n                      <span class=\"tag\">{{tech.Technology}}</span>\n                    </ng-template> -->\n                <!-- <span class=\"tag\" *ngFor=\"let tech of job.jobTechnologies\" [style]=\"color:\"{{tech.Colored}}>{{tech.Technology}}</span> -->\n                <span class=\"tag {{tech.Color}}\" *ngFor=\"let tech of job.jobTechnologies\">{{tech.Technology}}</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n      <!-- <section class=\"section\">\n        <progress class=\"progress\" value=\"98\" max=\"100\">Structured Query Language</progress>\n        <progress class=\"progress\" value=\"90\" max=\"100\">.Net Framework (3.5 +)</progress>\n        <progress class=\"progress\" value=\"85\" max=\"100\">WinForms</progress>\n      </section> -->\n    </div>\n    <div class=\"container column is-one-third\">\n      <section class=\"section\">\n        <div class=\"box is-size-7\">\n          <figure class=\"image\">\n            <img src=\"assets/images/headShot.png\">\n          </figure>\n          <h1 class=\"title has-text-centered\">Keith Stolte</h1>\n          <ul class=\"fa-ul\">\n            <li class=\"email\">\n              <i class=\"fa fa-envelope\"></i>\n              <a href=\"mailto:keithrstolte@gmail.com\">keithrstolte@gmail.com</a>\n            </li>\n            <li class=\"github\">\n              <i class=\"fa fa-github has-text-github\"></i>\n              <a href=\"https://www.github.com/kstolteYDI\" target=\"_blank\">github.com/kstolteYDI</a>\n            </li>\n            <!-- <li class=\"website\"><i class=\"fa fa-globe\"></i><a href=\"\" target=\"_blank\">portfoliosite.com</a></li> -->\n            <li class=\"linkedin\">\n              <i class=\"fa fa-linkedin-square has-text-linkedin\"></i>\n              <a href=\"linkedin.com/in/keithrstolte\" target=\"_blank\">Profile</a>\n            </li>\n            <li class=\"twitter\">\n              <i class=\"fa fa-twitter has-text-twitter\"></i>\n              <a href=\"https://twitter.com/sqltrailblazer\" target=\"_blank\">@sqlTrailblazer</a>\n            </li>\n          </ul>\n        </div>\n      </section>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"columns\">\n    <div class=\"column is-two-thirds\">\n      <div class=\"hero is-info\">\n        <div class=\"hero-body\">\n          <div class=\"container\">\n            <h1 class=\"title\">Employment Experience</h1>\n          </div>\n        </div>\n      </div>\n      <section class=\"box section\">\n        <div class=\"is-size-6\">\n          <div class=\"content\" *ngFor=\"let job of jobs\">\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <h2 class=\"is-marginless\">{{job.title}}</h2>\n              </div>\n              <div class=\"level-right\" style=\"Vertical-Align:bottom\">\n                <p class=\"has-text-weight-light\">{{job.startDate | date}} - {{(job.endDate | date) || \"Present\"}}</p>\n              </div>\n            </div>\n            <div class=\"level is-marginless\">\n              <div class=\"level-left\">\n                <p class=\"has-text-weight-light\">{{job.employer}}</p>\n              </div>\n              <div class=\"level-right\">\n                <p class=\"has-text-weight-light\">{{job.location}}</p>\n              </div>\n            </div>\n            <p class=\"is-marginless has-text-justified\">{{job.jobSummary}}</p>\n            <ul class=\"has-text-justified\" style=\"margin-top:0;\">\n              <li *ngFor=\"let role of job.jobRoles\">{{role.Role}}</li>\n            </ul>\n            <div *ngIf=\"job.jobTechnologies\">\n              <h4>Technology Stack</h4>\n              <div class=\"tags\">\n                <span class=\"tag {{tech.Color}}\" *ngFor=\"let tech of job.jobTechnologies\">{{tech.Technology}}</span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n    </div>\n    <div class=\"container column is-one-third\">\n      <section class=\"box section\">\n        <div class=\"is-size-6\">\n          <figure class=\"image\">\n            <img src=\"assets/images/headShot.png\">\n          </figure>\n          <h1 class=\"title has-text-centered\">Keith Stolte</h1>\n          <ul class=\"fa-ul\">\n            <li class=\"email\">\n              <i class=\"fa fa-envelope\"></i>\n              <a href=\"mailto:keithrstolte@gmail.com\">keithrstolte@gmail.com</a>\n            </li>\n            <li class=\"github\">\n              <i class=\"fa fa-github has-text-github\"></i>\n              <a href=\"https://www.github.com/kstolteYDI\" target=\"_blank\">github.com/kstolteYDI</a>\n            </li>\n            <li class=\"linkedin\">\n              <i class=\"fa fa-linkedin-square has-text-linkedin\"></i>\n              <a href=\"linkedin.com/in/keithrstolte\" target=\"_blank\">Profile</a>\n            </li>\n            <li class=\"twitter\">\n              <i class=\"fa fa-twitter has-text-twitter\"></i>\n              <a href=\"https://twitter.com/sqltrailblazer\" target=\"_blank\">@sqlTrailblazer</a>\n            </li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"box hero is-small is-github\">\n        <div class=\"hero-body\">\n          <div class=\"container\">\n            <h1 class=\"title is-bold\">\n              <i class=\"fa fa-github\"></i>\n              GitHub\n            </h1>\n            <h2 class=\"subtitle\">Contributed Repositories</h2>\n            <article class=\"media\" *ngFor=\"let repo of contributedRepo.contributedRepositories.edges\">\n              <figure class=\"media-left image is-32x32\">\n                  <img src=\"{{repo.node.owner.avatarUrl}}\" />\n              </figure>\n              <div class=\"media-content\">\n                  <a href=\"{{repo.node.url}}\" target=\"_blank\">{{repo.node.owner.login}} - {{repo.node.name}}</a>\n              </div>\n            </article>\n          </div>\n        </div>\n      </section>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -266,6 +266,92 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Keith Stolte';
         this.jobs = JOBS;
+        this.contributedRepo = {
+            "contributedRepositories": {
+                "edges": [
+                    {
+                        "node": {
+                            "name": "docs",
+                            "url": "https://github.com/sendgrid/docs",
+                            "owner": {
+                                "login": "sendgrid",
+                                "avatarUrl": "https://avatars0.githubusercontent.com/u/181234?v=4"
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "awesome-public-datasets",
+                            "url": "https://github.com/caesar0301/awesome-public-datasets",
+                            "owner": {
+                                "login": "caesar0301",
+                                "avatarUrl": "https://avatars3.githubusercontent.com/u/499254?v=4"
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "SSH.NET",
+                            "url": "https://github.com/sshnet/SSH.NET",
+                            "owner": {
+                                "login": "sshnet",
+                                "avatarUrl": "https://avatars3.githubusercontent.com/u/16708801?v=4"
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "bulma",
+                            "url": "https://github.com/jgthms/bulma",
+                            "owner": {
+                                "login": "jgthms",
+                                "avatarUrl": "https://avatars1.githubusercontent.com/u/1254808?v=4"
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "atn-hubot",
+                            "url": "https://github.com/schie/atn-hubot",
+                            "owner": {
+                                "login": "schie",
+                                "avatarUrl": "https://avatars1.githubusercontent.com/u/4561856?v=4"
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "LegislativeApp",
+                            "url": "https://github.com/kstolteYDI/LegislativeApp",
+                            "owner": {
+                                "login": "kstolteYDI",
+                                "avatarUrl": "https://avatars0.githubusercontent.com/u/20091146?v=4"
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "pong-score-board",
+                            "url": "https://github.com/schie/pong-score-board",
+                            "owner": {
+                                "login": "schie",
+                                "avatarUrl": "https://avatars1.githubusercontent.com/u/4561856?v=4"
+                            }
+                        }
+                    },
+                    {
+                        "node": {
+                            "name": "kstolteYDI.github.io",
+                            "url": "https://github.com/kstolteYDI/kstolteYDI.github.io",
+                            "owner": {
+                                "login": "kstolteYDI",
+                                "avatarUrl": "https://avatars0.githubusercontent.com/u/20091146?v=4"
+                            }
+                        }
+                    }
+                ]
+            }
+        };
     }
     return AppComponent;
 }());
@@ -277,6 +363,41 @@ AppComponent = __decorate([
     })
 ], AppComponent);
 
+// GitHub GraphQL Query
+// {
+//   viewer {
+//    contributedRepositories (first:20) {
+//      edges {
+//        node {
+//          name
+//          url
+//          owner{
+//            login
+//            avatarUrl}
+//        }
+//      }
+//    }
+//    pullRequests(first: 100, orderBy: {field: UPDATED_AT, direction:DESC}){
+//      totalCount
+//      nodes{
+//        repository{
+//          nameWithOwner
+//          owner{avatarUrl}
+//        }
+//        additions
+//        deletions
+//        title
+//        merged
+//      }
+//    }
+//    organizations(first:10){
+//      nodes{
+//        name
+//        avatarUrl
+//      }
+//    }
+//  }
+//  }
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
