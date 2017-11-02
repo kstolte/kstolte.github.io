@@ -267,85 +267,85 @@ var AppComponent = (function () {
         this.title = 'Keith Stolte';
         this.jobs = JOBS;
         this.contributedRepo = {
-            "contributedRepositories": {
-                "edges": [
+            'contributedRepositories': {
+                'edges': [
                     {
-                        "node": {
-                            "name": "docs",
-                            "url": "https://github.com/sendgrid/docs",
-                            "owner": {
-                                "login": "sendgrid",
-                                "avatarUrl": "https://avatars0.githubusercontent.com/u/181234?v=4"
+                        'node': {
+                            'name': 'docs',
+                            'url': 'https://github.com/sendgrid/docs',
+                            'owner': {
+                                'login': 'sendgrid',
+                                'avatarUrl': 'https://avatars0.githubusercontent.com/u/181234?v=4'
                             }
                         }
                     },
                     {
-                        "node": {
-                            "name": "awesome-public-datasets",
-                            "url": "https://github.com/caesar0301/awesome-public-datasets",
-                            "owner": {
-                                "login": "caesar0301",
-                                "avatarUrl": "https://avatars3.githubusercontent.com/u/499254?v=4"
+                        'node': {
+                            'name': 'awesome-public-datasets',
+                            'url': 'https://github.com/caesar0301/awesome-public-datasets',
+                            'owner': {
+                                'login': 'caesar0301',
+                                'avatarUrl': 'https://avatars3.githubusercontent.com/u/499254?v=4'
                             }
                         }
                     },
                     {
-                        "node": {
-                            "name": "SSH.NET",
-                            "url": "https://github.com/sshnet/SSH.NET",
-                            "owner": {
-                                "login": "sshnet",
-                                "avatarUrl": "https://avatars3.githubusercontent.com/u/16708801?v=4"
+                        'node': {
+                            'name': 'SSH.NET',
+                            'url': 'https://github.com/sshnet/SSH.NET',
+                            'owner': {
+                                'login': 'sshnet',
+                                'avatarUrl': 'https://avatars3.githubusercontent.com/u/16708801?v=4'
                             }
                         }
                     },
                     {
-                        "node": {
-                            "name": "bulma",
-                            "url": "https://github.com/jgthms/bulma",
-                            "owner": {
-                                "login": "jgthms",
-                                "avatarUrl": "https://avatars1.githubusercontent.com/u/1254808?v=4"
+                        'node': {
+                            'name': 'bulma',
+                            'url': 'https://github.com/jgthms/bulma',
+                            'owner': {
+                                'login': 'jgthms',
+                                'avatarUrl': 'https://avatars1.githubusercontent.com/u/1254808?v=4'
                             }
                         }
                     },
                     {
-                        "node": {
-                            "name": "atn-hubot",
-                            "url": "https://github.com/schie/atn-hubot",
-                            "owner": {
-                                "login": "schie",
-                                "avatarUrl": "https://avatars1.githubusercontent.com/u/4561856?v=4"
+                        'node': {
+                            'name': 'atn-hubot',
+                            'url': 'https://github.com/schie/atn-hubot',
+                            'owner': {
+                                'login': 'schie',
+                                'avatarUrl': 'https://avatars1.githubusercontent.com/u/4561856?v=4'
                             }
                         }
                     },
                     {
-                        "node": {
-                            "name": "LegislativeApp",
-                            "url": "https://github.com/kstolteYDI/LegislativeApp",
-                            "owner": {
-                                "login": "kstolteYDI",
-                                "avatarUrl": "https://avatars0.githubusercontent.com/u/20091146?v=4"
+                        'node': {
+                            'name': 'LegislativeApp',
+                            'url': 'https://github.com/kstolteYDI/LegislativeApp',
+                            'owner': {
+                                'login': 'kstolteYDI',
+                                'avatarUrl': 'https://avatars0.githubusercontent.com/u/20091146?v=4'
                             }
                         }
                     },
                     {
-                        "node": {
-                            "name": "pong-score-board",
-                            "url": "https://github.com/schie/pong-score-board",
-                            "owner": {
-                                "login": "schie",
-                                "avatarUrl": "https://avatars1.githubusercontent.com/u/4561856?v=4"
+                        'node': {
+                            'name': 'pong-score-board',
+                            'url': 'https://github.com/schie/pong-score-board',
+                            'owner': {
+                                'login': 'schie',
+                                'avatarUrl': 'https://avatars1.githubusercontent.com/u/4561856?v=4'
                             }
                         }
                     },
                     {
-                        "node": {
-                            "name": "kstolteYDI.github.io",
-                            "url": "https://github.com/kstolteYDI/kstolteYDI.github.io",
-                            "owner": {
-                                "login": "kstolteYDI",
-                                "avatarUrl": "https://avatars0.githubusercontent.com/u/20091146?v=4"
+                        'node': {
+                            'name': 'kstolteYDI.github.io',
+                            'url': 'https://github.com/kstolteYDI/kstolteYDI.github.io',
+                            'owner': {
+                                'login': 'kstolteYDI',
+                                'avatarUrl': 'https://avatars0.githubusercontent.com/u/20091146?v=4'
                             }
                         }
                     }
