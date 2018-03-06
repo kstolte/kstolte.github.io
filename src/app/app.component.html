@@ -8,7 +8,7 @@
           </div>
         </div>
       </div>
-      <section class="box section">
+      <section class="section">
         <div class="is-size-6">
           <div class="content" *ngFor="let job of jobs">
             <div class="level is-marginless">
@@ -42,7 +42,7 @@
       </section>
     </div>
     <div class="container column is-one-third">
-      <section class="box section">
+      <section class="section">
         <div class="is-size-6">
           <figure class="image">
             <img src="assets/images/headShot.png">
@@ -50,38 +50,42 @@
           <h1 class="title has-text-centered">Keith Stolte</h1>
           <ul class="fa-ul">
             <li class="email">
-              <i class="fa fa-envelope"></i>
+              <i class="fas fa-envelope"></i>
               <a href="mailto:keithrstolte@gmail.com">keithrstolte@gmail.com</a>
             </li>
             <li class="github">
-              <i class="fa fa-github has-text-github"></i>
-              <a href="https://www.github.com/kstolteYDI" target="_blank">github.com/kstolteYDI</a>
+              <i class="fab fa-github has-text-github"></i>
+              <a href="https://www.github.com/kstolte" target="_blank">github.com/kstolte</a>
             </li>
             <li class="linkedin">
-              <i class="fa fa-linkedin-square has-text-linkedin"></i>
+              <i class="fab fa-linkedin has-text-linkedin"></i>
               <a href="linkedin.com/in/keithrstolte" target="_blank">Profile</a>
             </li>
             <li class="twitter">
-              <i class="fa fa-twitter has-text-twitter"></i>
+              <i class="fab fa-twitter has-text-twitter"></i>
               <a href="https://twitter.com/sqltrailblazer" target="_blank">@sqlTrailblazer</a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="box hero is-small is-github">
+      <section class="hero is-small is-github">
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-bold">
-              <i class="fa fa-github"></i>
+              <i class="fab fa-github"></i>
               GitHub
             </h1>
             <h2 class="subtitle">Contributed Repositories</h2>
             <article class="media" *ngFor="let repo of contributedRepo.contributedRepositories.edges">
-              <figure class="media-left image is-32x32">
+              <figure class="media-left">
+                <p class="image is-32x32">
                   <img src="{{repo.node.owner.avatarUrl}}" />
+                </p>
               </figure>
               <div class="media-content">
+                <div class="content">
                   <a href="{{repo.node.url}}" target="_blank">{{repo.node.owner.login}} - {{repo.node.name}}</a>
+                </div>
               </div>
             </article>
           </div>
