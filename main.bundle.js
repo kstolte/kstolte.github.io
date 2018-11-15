@@ -131,7 +131,7 @@ var JOBS = [
         jobSummary: "Served in a DevOps Role for a Software Development Organization.\n    Performed as the escalation point for support tickets to provide fixes and fact finding\n    prior to being escalated to the development group. ",
         jobRoles: [
             {
-                Role: "Maintained and supported 50+ physical servers that were but onsite and hosted through a third party datacenter."
+                Role: "Maintained and supported 50+ physical servers that were both onsite and hosted through a third party datacenter."
             },
             { Role: "Implemented Tier 4 support for escalation of tickets." },
             {
