@@ -102,7 +102,7 @@ const JOBS: Job[] = [
     jobRoles: [
       {
         Role:
-          "Maintained and supported 50+ physical servers that were but onsite and hosted through a third party datacenter."
+          "Maintained and supported 50+ physical servers that were both onsite and hosted through a third party datacenter."
       },
       { Role: "Implemented Tier 4 support for escalation of tickets." },
       {
