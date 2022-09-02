@@ -1,0 +1,242 @@
+[
+  {
+    "cvOnly": false,
+    "jobTitle": "Director of Technology",
+    "employer": "Yellow Dog Software",
+    "location": "Norfolk, VA",
+    "startDate": "2021-01-18",
+    "endDate": null,
+    "jobSummary": "Develop and maintain components of an inventory management software solution. The solution is based on a MSSQL database backend with a long-term support WinForms Client application and iOS/Android Applications.",
+    "jobRoles": [
+      "Lead and organize initialtives",
+      "Conceptualize, plan, and execute new features and technology into the software solution.",
+      "Create system integrations between Yellow Dog Inventory and third party systems.",
+      "Architected and implemented an internal tool for Support and Implementation groups to track real time system status to deliver proactive support and client assistance."
+    ],
+    "jobTechnologies": [
+      "React",
+      "React-Native",
+      "MSSQL Server",
+      ".Net Framework",
+      "dotnet core",
+      "Git",
+      "GitHub",
+      "WinForms",
+      "REST APIs",
+      "GraphQL",
+      "Windows",
+      "MacOS"
+    ]
+  },
+  {
+    "cvOnly": false,
+    "jobTitle": "Technical Co-Founder, CTO Role",
+    "employer": "Lumastic",
+    "location": "Charlottesville, VA",
+    "startDate": "2019-07-04",
+    "endDate": "2022-09-01",
+    "jobSummary": "Lumastic was a platform for creators to accomplish projects with a community. Initial target market was for hobbyists and YouTube Creators to have a platform where they could engage with other members of their field for assistance on projects. It was a place to show progress of a project overtime and record the process by using rich text and multimedia content.",
+    "jobRoles": [
+      "Lead in Technology Architecture and planning initiatives.",
+      "Built out highly scalable api and database solution.",
+      "Implemented secure subscription for premium user base using Stripe Payment Platform."
+    ],
+    "jobTechnologies": [
+      "React",
+      "prisma",
+      "express",
+      "mysql",
+      "AWS",
+      "dotnet core",
+      "Git",
+      "GitHub",
+      "GraphQL",
+      "Stripe",
+      "Webhooks",
+      "MacOS"
+    ]
+  },
+  {
+    "cvOnly": false,
+    "jobTitle": "Software Developer",
+    "employer": "Yellow Dog Software",
+    "location": "Norfolk, VA",
+    "startDate": "2016-11-01",
+    "endDate": "2021-01-18",
+    "jobSummary": "Develop and maintain components of an inventory management software solution. The solution is based on a MSSQL database backend with a long-term support WinForms Client application and iOS/Android Applications.",
+    "jobRoles": [
+      "Recent development has been based around new feature implementation in WinForms Client, React Web Apps, .Net Core API, iOS/Android Applications, and ExpressJS GraphQL server.",
+      "Resolve all issues with software and final escalation point for end users.",
+      "Conceptualize, plan, and execute new features and technology into the software solution.",
+      "Create system integrations between Yellow Dog Inventory and third party systems.",
+      "Architected and implemented an internal tool for Support and Implementation groups to track real time system status to deliver proactive support and client assistance."
+    ],
+    "jobTechnologies": [
+      "React",
+      "React-Native",
+      "MSSQL Server",
+      ".Net Framework",
+      "dotnet core",
+      "Git",
+      "GitHub",
+      "WinForms",
+      "REST APIs",
+      "GraphQL",
+      "Windows",
+      "MacOS"
+    ]
+  },
+  {
+    "cvOnly": false,
+    "jobTitle": "DBA / IT Manager",
+    "employer": "Yellow Dog Software",
+    "location": "Norfolk, VA",
+    "startDate": "2016-05-15",
+    "endDate": "2016-10-31",
+    "jobSummary": "Served in a DevOps Role for a Software Development Organization. Performed as the escalation point for support tickets to provide fixes and fact finding prior to being escalated to the development group. ",
+    "jobRoles": [
+      "Maintained and supported 50+ physical servers that were but onsite and hosted through a third party datacenter.",
+      "Implemented Tier 4 support for escalation of tickets.",
+      "Pinpointed opportunities for database improvement in support of the software.",
+      "Composed, released, and applied SQL Scripts to production environments to resolve bugs or optimize client systems.",
+      "Assisted support team with timely ticket resolution.",
+      "Installed a Network Management System to track uptime and maintained an uptime of 99.99% across the server and network infrastructure."
+    ],
+    "jobTechnologies": [
+      "MSSQL Server",
+      ".Net Framework",
+      "PowerShell",
+      "Windows"
+    ]
+  },
+  {
+    "cvOnly": true,
+    "jobTitle": "Lieutenant of Squad Team",
+    "employer": "Virginia Beach Emergency Medical Services",
+    "location": "Virginia Beach, VA",
+    "startDate": "2013-06-15",
+    "endDate": "2015-11-15",
+    "jobSummary": "Lead a team of dedicated volunteers in performing excellent pre-hospital care in astire environments.",
+    "jobRoles": [
+      "Creating a schedule made up of multiple volunteers that provide varying availabilities.",
+      "Ensure proper training of members and guide members through a multifaceted training plan that focuses on all hazards response."
+    ],
+    "jobTechnologies": ["SharePoint", "Windows", "MacOS"]
+  },
+  {
+    "cvOnly": false,
+    "jobTitle": "Application Support Analyst",
+    "employer": "Gold Key | PHR Hotels & Resorts",
+    "location": "Virginia Beach, VA",
+    "startDate": "2015-06-01",
+    "endDate": "2016-05-15",
+    "jobSummary": "Implemented and maintained the Software items in the Service Portfolio and Pipeline. This includes tier 2 & 3 end user support, diagnosing software problems and scheduled maintenance. In addition, they provide advanced system administration/configuration tasks and consult customers on proposed changes within In House (Custom) Applications and third-party COTS software products.",
+    "jobRoles": [
+      "Developed SQL reports and queries for IT Department and customer use.",
+      "Maintained SharePoint site with on premise SharePoint Server Farm.",
+      "Developed multifaceted SharePoint sites assist customers with storing and cataloging documents, data, and processes.",
+      "Provided 3rd tier support for end user support.",
+      "Conducted deep dives into software application logic while troubleshooting and perform analysis on complex application usage scenarios.",
+      "Provided advanced system administration/configuration tasks and consult customers on proposed changes within In House (Custom) Applications and 3rd party COTS software products."
+    ],
+    "jobTechnologies": [
+      "MSSQL Server",
+      "SharePoint",
+      "Visual Basic",
+      "WireShark",
+      "Juniper Networks",
+      "Micros POS",
+      "Opera PMS",
+      "OnQ PMS",
+      "Microsoft Dynamics SL",
+      "IIS",
+      "Windows",
+      "MacOS"
+    ]
+  },
+  {
+    "cvOnly": true,
+    "jobTitle": "Support Tech I",
+    "employer": "Gold Key | PHR Hotels & Resorts",
+    "location": "Virginia Beach, VA",
+    "startDate": "2013-03-15",
+    "endDate": "2015-06-01",
+    "jobSummary": "Provided onsite and phone support to all levels of employees.",
+    "jobRoles": [
+      "Developed low to medium level SQL reports and queries for IT Department and customer use.",
+      "Executed desktop and server support for multiple hardware configurations, operating systems, and applications.",
+      "Maintained SharePoint site with on premise SharePoint Server Farm.",
+      "Conducted deep dives into software application logic while troubleshooting and perform analysis on complex application usage scenarios.",
+      "Setup and delivered a SharePoint site that securely stores all associate personnel records.",
+      "Troubleshoot, maintain, and support multiple internal applications on a variety of platforms and frameworks.",
+      "Implement complex applications and products to outlets along the Virginia Beach Oceanfront."
+    ],
+    "jobTechnologies": [
+      "MSSQL Server",
+      "SharePoint",
+      "Visual Basic",
+      "WireShark",
+      "Juniper Networks",
+      "Opera PMS",
+      "OnQ PMS",
+      "Microsoft Dynamics SL",
+      "IIS",
+      "Windows",
+      "MacOS"
+    ]
+  },
+  {
+    "cvOnly": true,
+    "jobTitle": "Junior Project Manager",
+    "employer": "Met Life",
+    "location": "Greater New York City Area",
+    "startDate": "2012-06-15",
+    "endDate": "2013-03-15",
+    "jobSummary": "Telecommuting job to assist with an enterprise wide migration from Lotus Notes to Microsoft SharePoint.",
+    "jobRoles": [
+      "Co-Managed an Enterprise-wide migration from Lotus Notes applications and databases to SharePoint.",
+      "Constant communication to clients on a daily basis, to keep them notified on the status of their projects.",
+      "Maintained Excellent Customer Service with the Business Owners of Applications.",
+      "Assisted with maintaining security permissions on SharePoint websites."
+    ],
+    "jobTechnologies": ["SharePoint", "Windows", "Lotus Notes"]
+  },
+  {
+    "cvOnly": true,
+    "jobTitle": "Production Assistant",
+    "employer": "Studio Center Total Production",
+    "location": "Norfolk, VA",
+    "startDate": "2007-05-20",
+    "endDate": "2012-04-15",
+    "jobSummary": "Telecommuting job to assist with an enterprise wide migration from Lotus Notes to Microsoft SharePoint. My components of the project was successful and termination was based on the ending of the project.",
+    "jobRoles": [
+      "Co-Managed an Enterprise-wide migration from Lotus Notes applications and databases to SharePoint.",
+      "Constant communication to clients on a daily basis, to keep them notified on the status of their projects.",
+      "Maintained Excellent Customer Service with the Business Owners of Applications.",
+      "Assisted with maintaining security permissions on SharePoint websites."
+    ],
+    "jobTechnologies": ["Google Sheets", "Pro Tools", "MacOS"]
+  },
+  {
+    "cvOnly": true,
+    "jobTitle": "Audio Engineer",
+    "employer": "Roper Performing Arts Center",
+    "location": "Norfolk, VA",
+    "startDate": "2009-02-01",
+    "endDate": "2012-06-15",
+    "jobSummary": "Telecommuting job to assist with an enterprise wide migration from Lotus Notes to Microsoft SharePoint. My components of the project was successful and termination was based on the ending of the project.",
+    "jobRoles": [
+      "Perform as a Stage Manager to make critical decisions while in rehearsals and the performance of live theatrical performances.",
+      "Provide live sound reinforcement for various types of performing genres.",
+      "Designed the updated theatre's sound system, still currently in use.",
+      "Assist with load-in and load-out of equipment and props for use during stage performances."
+    ],
+    "jobTechnologies": [
+      "Google Sheets",
+      "Pro Tools",
+      "MacOS",
+      "Yamaha LS9",
+      "Q-Lab"
+    ]
+  }
+]
