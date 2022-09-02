@@ -1,28 +1,31 @@
 {
   "name": "kstolte-homepage",
   "version": "0.1.0",
+  "homepage": "https://kstolte.github.io",
   "private": true,
   "keywords": [
     "divjoy"
   ],
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "5.0.1",
-    "react-hook-form": "6.15.1",
+    "@analytics/google-analytics": "0.2.2",
     "@material-ui/core": "4.12.3",
     "@material-ui/icons": "4.11.2",
     "@material-ui/lab": "4.0.0-alpha.60",
-    "use-local-storage-state": "9.0.2",
-    "react-helmet": "6.1.0",
-    "query-string": "6.13.8",
-    "history": "4.10.1",
     "analytics": "0.3.1",
-    "@analytics/google-analytics": "0.2.2"
+    "history": "4.10.1",
+    "query-string": "6.13.8",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-helmet": "6.1.0",
+    "react-hook-form": "6.15.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "5.0.1",
+    "use-local-storage-state": "9.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +45,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
