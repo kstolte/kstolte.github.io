@@ -1,17 +1,17 @@
-import React from "react";
-import Box from "@material-ui/core/Box";
-import { makeStyles } from "@material-ui/core/styles";
-import { emphasize } from "@material-ui/core/styles/colorManipulator";
-import capitalize from "@material-ui/core/utils/capitalize";
-import BackgroundImage from "./BackgroundImage";
+import React from 'react';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
+import { emphasize } from '@material-ui/core/styles/colorManipulator';
+import capitalize from '@material-ui/core/utils/capitalize';
+import BackgroundImage from './BackgroundImage';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: "relative",
+    position: 'relative',
     // Ensure child <Container> is above background
     // image (if one is set with the bgImage prop).
-    "& > .MuiContainer-root": {
-      position: "relative",
+    '& > .MuiContainer-root': {
+      position: 'relative',
     },
   },
 
@@ -19,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
   // text color and dividing border automatically based on background color.
   // Adds the keys colorDefault, colorLight, etc
   ...[
-    ["default", theme.palette.background.default],
-    ["light", emphasize(theme.palette.background.default, 0.03)],
-    ["primary", theme.palette.primary.main],
-    ["secondary", theme.palette.secondary.main],
+    ['default', theme.palette.background.default],
+    ['light', emphasize(theme.palette.background.default, 0.03)],
+    ['primary', theme.palette.primary.main],
+    ['secondary', theme.palette.secondary.main],
   ].reduce((acc, [name, value]) => {
     acc[`color${capitalize(name)}`] = {
       backgroundColor: value,
@@ -40,12 +40,12 @@ const useStyles = makeStyles((theme) => ({
   }, {}),
 
   colorInherit: {
-    color: "inherit",
+    color: 'inherit',
   },
 
   colorTransparent: {
-    backgroundColor: "transparent",
-    color: "inherit",
+    backgroundColor: 'transparent',
+    color: 'inherit',
   },
 }));
 
@@ -53,10 +53,10 @@ function Section(props) {
   const classes = useStyles();
 
   const {
-    bgColor = "default",
+    bgColor = 'default',
     bgImage,
     bgImageOpacity,
-    size = "normal",
+    size = 'normal',
     className,
     children,
     ...otherProps
@@ -78,7 +78,7 @@ function Section(props) {
       className={
         classes.root +
         ` ${classes[`color${capitalize(bgColor)}`]}` +
-        (className ? ` ${className}` : "")
+        (className ? ` ${className}` : '')
       }
       {...otherProps}
     >

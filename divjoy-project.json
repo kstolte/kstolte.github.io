@@ -553,10 +553,7 @@
         }
       ],
       "muiStyle": "{\n  // Increase <Container> padding so it's\n  // at least half of <Grid> spacing to \n  // avoid horizontal scroll on mobile.\n  // See https://material-ui.com/components/grid/#negative-margin\n  container: {\n    padding: `0 ${theme.spacing(3)}px`,\n  },\n  image: {\n    margin: \"0 auto\",\n    maxWidth: 570,\n    display: \"block\",\n    height: \"auto\",\n    width: \"100%\",\n  },\n}",
-      "tags": [
-        "Hero",
-        "Popular"
-      ],
+      "tags": ["Hero", "Popular"],
       "description": "Hero with image on right",
       "isVisible": true,
       "nameLibrary": "",
@@ -660,10 +657,7 @@
           "isVisible": true
         }
       ],
-      "tags": [
-        "Clients",
-        "Popular"
-      ],
+      "tags": ["Clients", "Popular"],
       "description": "Clients with logos",
       "isVisible": true,
       "nameLibrary": "",
@@ -824,10 +818,7 @@
           "isVisible": true
         }
       ],
-      "tags": [
-        "Features",
-        "Popular"
-      ],
+      "tags": ["Features", "Popular"],
       "description": "Features with alternating rows",
       "isVisible": true,
       "nameLibrary": ""
@@ -1037,10 +1028,7 @@
         }
       ],
       "id": 1611797,
-      "tags": [
-        "Testimonials",
-        "Popular"
-      ],
+      "tags": ["Testimonials", "Popular"],
       "description": "Testimonials centered with avatar at top",
       "isVisible": true,
       "nameLibrary": ""
@@ -1132,11 +1120,7 @@
         }
       ],
       "id": 1070482,
-      "tags": [
-        "Newsletter",
-        "Popular",
-        "Form"
-      ],
+      "tags": ["Newsletter", "Popular", "Form"],
       "description": "Newsletter with form on right",
       "isVisible": true,
       "nameLibrary": "",
@@ -1591,10 +1575,7 @@
         }
       ],
       "id": 5112763,
-      "tags": [
-        "Footer",
-        "Popular"
-      ],
+      "tags": ["Footer", "Popular"],
       "code": "\tconst darkMode = useDarkMode();\n  // Use inverted logo if specified \n\t// and we are in dark mode\n  const logo = props.logoInverted && darkMode.value \n  \t\t\t\t\t\t\t? props.logoInverted \n  \t\t\t\t\t\t\t: props.logo;\n",
       "description": "Footer with row of links",
       "isVisible": true,
@@ -1691,10 +1672,7 @@
         }
       ],
       "id": 3610364,
-      "tags": [
-        "Hero",
-        "Content"
-      ],
+      "tags": ["Hero", "Content"],
       "description": "Simple hero",
       "isVisible": true,
       "nameLibrary": "",
@@ -1874,10 +1852,7 @@
         }
       ],
       "id": 6445610,
-      "tags": [
-        "Team",
-        "Popular"
-      ],
+      "tags": ["Team", "Popular"],
       "description": "Team bios with avatar",
       "isVisible": true,
       "nameLibrary": ""
@@ -2042,10 +2017,7 @@
       "muiStyle": "{\n  accordion: {\n    // Remove shadow\n    boxShadow: \"none\",\n    \"&:before\": {\n      // Remove default divider\n      display: \"none\",\n    },\n    // Add a custom border\n    \"&:not(:last-child)\": {\n      borderBottom: `1px solid ${theme.palette.divider}`,\n    },\n  },\n  expanded: {\n    margin: `0 !important`,\n  },\n  summary: {\n    minHeight: 78,\n  },\n  summaryContent: {\n    margin: \"0 !important\",\n  },\n}",
       "code": "  const items = [\n    {\n      question: \"Integer ornare neque mauris?\",\n      answer:\n        \"Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"Lorem ipsum dolor sit amet?\",\n      answer:\n        \"Nunc nulla mauris, laoreet vel cursus lacinia, consectetur sit amet tellus. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"Suspendisse ut tincidunt?\",\n      answer:\n        \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, metus et mattis ullamcorper. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"Ut enim ad minim veniam?\",\n      answer:\n        \"Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"In velit mi, rhoncus dictum neque?\",\n      answer:\n        \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.\",\n    },\n  ];\n",
       "id": 8401615,
-      "tags": [
-        "FAQ",
-        "Popular"
-      ],
+      "tags": ["FAQ", "Popular"],
       "description": "FAQ with expandable items",
       "isVisible": true,
       "nameLibrary": ""
@@ -2176,11 +2148,7 @@
         }
       ],
       "id": 4954952,
-      "tags": [
-        "Contact",
-        "Popular",
-        "Form"
-      ],
+      "tags": ["Contact", "Popular", "Form"],
       "description": "Contact form",
       "isVisible": true,
       "nameLibrary": "",
@@ -2994,11 +2962,7 @@
           "isVisible": true
         }
       ],
-      "tags": [
-        "Navigation",
-        "Popular",
-        "not:saas"
-      ],
+      "tags": ["Navigation", "Popular", "not:saas"],
       "description": "Navbar with row of links and sign up button",
       "id": 9800430,
       "isVisible": true,

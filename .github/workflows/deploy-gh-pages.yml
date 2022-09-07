@@ -3,7 +3,7 @@ name: build and deploy to gh pages
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
         run: npm install
       - name: build site
         run: npm run build
-        env: 
+        env:
           REACT_APP_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

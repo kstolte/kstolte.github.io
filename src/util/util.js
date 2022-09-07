@@ -1,17 +1,17 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
 // Make an API request to `/api/{path}`
-export function apiRequest(path, method = "GET", data) {
+export function apiRequest(path, method = 'GET', data) {
   return fetch(`/api/${path}`, {
     method: method,
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: data ? JSON.stringify(data) : undefined,
   })
     .then((response) => response.json())
     .then((response) => {
-      if (response.status === "error") {
+      if (response.status === 'error') {
         throw new CustomError(response.code, response.message);
       } else {
         return response.data;
@@ -20,12 +20,12 @@ export function apiRequest(path, method = "GET", data) {
 }
 
 // Make an API request to any external URL
-export function apiRequestExternal(url, method = "GET", data) {
+export function apiRequestExternal(url, method = 'GET', data) {
   return fetch(url, {
     method: method,
     headers: {
-      accept: "application/json",
-      "Content-Type": "application/json",
+      accept: 'application/json',
+      'Content-Type': 'application/json',
     },
     body: data ? JSON.stringify(data) : undefined,
   }).then((response) => response.json());

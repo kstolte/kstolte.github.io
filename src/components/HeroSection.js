@@ -1,12 +1,12 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
-import Section from "./Section";
-import SectionHeader from "./SectionHeader";
-import { Link } from "./../util/router";
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import Section from './Section';
+import SectionHeader from './SectionHeader';
+import { Link } from './../util/router';
 
 const useStyles = makeStyles((theme) => ({
   // Increase <Container> padding so it's
@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
     padding: `0 ${theme.spacing(3)}px`,
   },
   image: {
-    margin: "0 auto",
+    margin: '0 auto',
     maxWidth: 570,
-    display: "block",
-    height: "auto",
-    width: "100%",
+    display: 'block',
+    height: 'auto',
+    width: '100%',
   },
 }));
 
@@ -38,7 +38,7 @@ function HeroSection(props) {
       <Container className={classes.container}>
         <Grid container={true} alignItems="center" spacing={6}>
           <Grid container={true} item={true} direction="column" xs={12} md={6}>
-            <Box textAlign={{ xs: "center", md: "left" }}>
+            <Box textAlign={{ xs: 'center', md: 'left' }}>
               <SectionHeader
                 title={props.title}
                 subtitle={props.subtitle}

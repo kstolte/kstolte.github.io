@@ -1,16 +1,16 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    content: "",
-    backgroundPosition: "center center",
-    backgroundSize: "cover",
+    content: '',
+    backgroundPosition: 'center center',
+    backgroundSize: 'cover',
     top: 0,
     left: 0,
     bottom: 0,
     right: 0,
-    position: "absolute",
+    position: 'absolute',
     zIndex: 0,
   },
 }));
