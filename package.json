@@ -20,9 +20,11 @@
     "react-hook-form": "6.15.1",
     "react-router-dom": "5.2.0",
     "react-scripts": "5.0.1",
+    "react-snap": "^1.23.0",
     "use-local-storage-state": "9.0.2"
   },
   "scripts": {
+    "postbuild": "react-snap",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
