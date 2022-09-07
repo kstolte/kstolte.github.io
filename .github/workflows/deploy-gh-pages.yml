@@ -22,14 +22,9 @@ jobs:
   # Build job via reusable workflow
   build:
     uses: ./.github/workflows/build.yml
-  upload-artifact:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./build
+    with:
+      upload-artifact: true
+
 
   # Deployment job
   deploy:
@@ -37,7 +32,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: upload-artifact
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
