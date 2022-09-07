@@ -22,6 +22,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16.x
       # Runs a set of commands using the runners shell
       - name: install deps
         run: npm ci
