@@ -6,7 +6,6 @@ import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
 import NightsStayIcon from '@material-ui/icons/NightsStay';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import Drawer from '@material-ui/core/Drawer';
@@ -36,22 +35,22 @@ function Navbar(props) {
 
   const darkMode = useDarkMode();
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [menuState, setMenuState] = useState(null);
+  // const [menuState, setMenuState] = useState(null);
 
   // Use inverted logo if specified
   // and we are in dark mode
   const logo =
     props.logoInverted && darkMode.value ? props.logoInverted : props.logo;
 
-  const handleOpenMenu = (event, id) => {
-    // Store clicked element (to anchor the menu to)
-    // and the menu id so we can tell which menu is open.
-    setMenuState({ anchor: event.currentTarget, id });
-  };
+  // const handleOpenMenu = (event, id) => {
+  //   // Store clicked element (to anchor the menu to)
+  //   // and the menu id so we can tell which menu is open.
+  //   setMenuState({ anchor: event.currentTarget, id });
+  // };
 
-  const handleCloseMenu = () => {
-    setMenuState(null);
-  };
+  // const handleCloseMenu = () => {
+  //   setMenuState(null);
+  // };
 
   return (
     <Section bgColor={props.color} size="auto">
