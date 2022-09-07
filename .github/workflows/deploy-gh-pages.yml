@@ -26,7 +26,7 @@ jobs:
           node-version: 16.x
       # Runs a set of commands using the runners shell
       - name: install deps
-        run: npm ci
+        run: npm install
       - name: build site
         run: npm run build
       - name: Upload artifact
