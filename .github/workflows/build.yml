@@ -1,0 +1,39 @@
+name: build
+
+# Controls when the workflow will run
+on:
+  pull_request:
+    branches:    
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_call:
+
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      # Runs a single command using the runners shell
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.4.1
+        with:
+          node-version: 16.x
+      # Runs a set of commands using the runners shell
+      - name: install deps
+        run: npm install
+      - name: build site
+        run: npm run build
+        env:
+          REACT_APP_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+    
