@@ -6,13 +6,18 @@ on:
     branches:    
       - main
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_call:
+    inputs:
+      upload-artifact:
+        description: 'triggers an upload of the build directory'
+        default: false
+        required: false
+        type: boolean
 
-# permissions:
-#   contents: read
-#   pages: write
-#   id-token: write
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 
 jobs:
@@ -36,4 +41,9 @@ jobs:
         run: npm run build
         env:
           REACT_APP_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+      - name: Upload artifact
+        if: ${{ inputs.upload-artifact }}
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./build
     
