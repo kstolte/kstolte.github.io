@@ -1,14 +1,14 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-import Box from "@material-ui/core/Box";
-import Avatar from "@material-ui/core/Avatar";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-import Section from "./Section";
-import SectionHeader from "./SectionHeader";
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import Box from '@material-ui/core/Box';
+import Avatar from '@material-ui/core/Avatar';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Section from './Section';
+import SectionHeader from './SectionHeader';
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -17,30 +17,29 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function TestimonialsSection(props) {
+function PodCastsSection(props) {
   const classes = useStyles();
 
   const items = [
     {
-      avatar: "https://uploads.divjoy.com/pravatar-150x-5.jpeg",
-      name: "Sarah Kline",
-      testimonial:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-      company: "Company",
+      avatar: 'https://uploads.divjoy.com/pravatar-150x-5.jpeg',
+      name: '99% invisible',
     },
     {
-      avatar: "https://uploads.divjoy.com/pravatar-150x-48.jpeg",
-      name: "Shawna Murray",
-      testimonial:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam!",
-      company: "Company",
+      avatar: 'https://uploads.divjoy.com/pravatar-150x-48.jpeg',
+      name: 'Stuff You Should Know',
     },
     {
-      avatar: "https://uploads.divjoy.com/pravatar-150x-12.jpeg",
-      name: "Blake Elder",
-      testimonial:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae.",
-      company: "Company",
+      avatar: 'https://uploads.divjoy.com/pravatar-150x-12.jpeg',
+      name: 'Revisionist History',
+    },
+    {
+      avatar: 'https://uploads.divjoy.com/pravatar-150x-12.jpeg',
+      name: 'Cautionary Tales with Tim Harford',
+    },
+    {
+      avatar: 'https://uploads.divjoy.com/pravatar-150x-12.jpeg',
+      name: 'Hidden Brain',
     },
   ];
 
@@ -97,4 +96,4 @@ function TestimonialsSection(props) {
   );
 }
 
-export default TestimonialsSection;
+export default PodCastsSection;
