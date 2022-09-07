@@ -30,7 +30,7 @@ jobs:
       - name: build site
         run: npm run build
         env: 
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          REACT_APP_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
