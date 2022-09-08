@@ -1,13 +1,16 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import { createRoot, hydrateRoot } from 'react-dom/client';
+
 import App from './pages/_app';
 import * as serviceWorker from './serviceWorker';
 
 const rootElement = document.getElementById('root');
+
 if (rootElement.hasChildNodes()) {
-  ReactDom.hydrate(<App />, rootElement);
+  hydrateRoot(<App />, rootElement);
 } else {
-  ReactDom.render(<App />, rootElement);
+  const root = createRoot(rootElement); // createRoot(container!) if you use TypeScript
+  root.render(<App />, rootElement);
 }
 
 // If you want your app to work offline and load faster, you can change
