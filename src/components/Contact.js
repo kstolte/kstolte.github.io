@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Box from '@material-ui/core/Box';
-import Alert from '@material-ui/lab/Alert';
-import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import Box from '@mui/material/Box';
+import Alert from '@mui/material/Alert';
+import Grid from '@mui/material/Grid';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress';
 import { useForm } from 'react-hook-form';
 import contact from './../util/contact';
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import LinkMui from '@material-ui/core/Link';
-import { GitHub, LinkedIn, Twitter } from '@material-ui/icons';
-import { makeStyles } from '@material-ui/core/styles';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import LinkMui from '@mui/material/Link';
+import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
+import makeStyles from '@mui/styles/makeStyles';
 
 import Section from './Section';
 import { Link } from './../util/router';
@@ -96,10 +96,10 @@ function Footer(props) {
             className={`${classes.item} ${classes.right} ${classes.smallLinks}`}
           >
             <Typography>
-              <LinkMui component={Link} to="/about" className={classes.link}>
+              <LinkMui component={Link} to="/about" className={classes.link} underline="hover">
                 About
               </LinkMui>
-              <LinkMui component={Link} to="/contact" className={classes.link}>
+              <LinkMui component={Link} to="/contact" className={classes.link} underline="hover">
                 Contact
               </LinkMui>
               {/* <LinkMui

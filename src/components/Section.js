@@ -1,9 +1,9 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
-import { emphasize } from '@material-ui/core/styles/colorManipulator';
-import capitalize from '@material-ui/core/utils/capitalize';
+import Box from '@mui/material/Box';
+import { emphasize } from '@mui/material/styles';
+import makeStyles from '@mui/styles/makeStyles';
 import BackgroundImage from './BackgroundImage';
+import { capitalize } from '@mui/material/utils';
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { Button, Container } from '@material-ui/core';
+import { Button, Container } from '@mui/material';
 
 import cvRecords from '../providers/data/cv.json';
 

@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Container from '@material-ui/core/Container';
-import Toolbar from '@material-ui/core/Toolbar';
-import Hidden from '@material-ui/core/Hidden';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import Button from '@material-ui/core/Button';
-import NightsStayIcon from '@material-ui/icons/NightsStay';
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
+import Hidden from '@mui/material/Hidden';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import Button from '@mui/material/Button';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import makeStyles from '@mui/styles/makeStyles';
 import Section from './Section';
 import { Link } from './../util/router';
 import { useDarkMode } from './../util/theme';
@@ -67,11 +67,11 @@ function Navbar(props) {
                   setDrawerOpen(true);
                 }}
                 color="inherit"
-              >
+                size="large">
                 <MenuIcon />
               </IconButton>
             </Hidden>
-            <Hidden smDown={true} implementation="css">
+            <Hidden mdDown={true} implementation="css">
               <Button component={Link} to="/about" color="inherit">
                 About
               </Button>
@@ -83,7 +83,7 @@ function Navbar(props) {
                 color="inherit"
                 onClick={darkMode.toggle}
                 style={{ opacity: 0.6 }}
-              >
+                size="large">
                 {darkMode.value && <NightsStayIcon />}
 
                 {!darkMode.value && <WbSunnyIcon />}
@@ -112,7 +112,7 @@ function Navbar(props) {
               color="inherit"
               onClick={darkMode.toggle}
               style={{ opacity: 0.6 }}
-            >
+              size="large">
               {darkMode.value && <NightsStayIcon />}
 
               {!darkMode.value && <WbSunnyIcon />}
