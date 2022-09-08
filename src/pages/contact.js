@@ -1,6 +1,6 @@
 import React from 'react';
-import Meta from './../components/Meta';
-import ContactSection from './../components/ContactSection';
+import Meta from 'components/Meta';
+import ContactSection from 'components/ContactSection';
 
 function ContactPage(props) {
   return (

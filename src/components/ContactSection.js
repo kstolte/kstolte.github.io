@@ -1,8 +1,8 @@
 import React from 'react';
-import Container from '@mui/material/Container';
-import Section from './Section';
-import SectionHeader from './SectionHeader';
-import Contact from './Contact';
+import Container from '@material-ui/core/Container';
+import Section from 'components/Section';
+import SectionHeader from 'components/SectionHeader';
+import Contact from 'components/Contact';
 
 function ContactSection(props) {
   return (

@@ -1,9 +1,10 @@
 import React from 'react';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Section from './Section';
-import SectionHeader from './SectionHeader';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
+import Section from 'components/Section';
+import SectionHeader from 'components/SectionHeader';
+import Image from 'next/image';
 
 function ClientsSection(props) {
   const items = [
@@ -48,7 +49,7 @@ function ClientsSection(props) {
             {items.map((item, index) => (
               <Grid item={true} xs={12} md="auto" key={index}>
                 <Box py={2} px={3}>
-                  <img src={item.image} width={item.width} alt={item.name} />
+                  <Image src={item.image} width={item.width} alt={item.name} />
                 </Box>
               </Grid>
             ))}

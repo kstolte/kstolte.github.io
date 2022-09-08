@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Container } from '@material-ui/core';
 import React from 'react';
 
 import { ResumeLine } from './resumeLine/resumeLine';
@@ -6,8 +6,9 @@ import { ResumeLine } from './resumeLine/resumeLine';
 export default function Resume(props) {
   return (
     <Container>
-      {props.cv.map((job) => (
+      {props.cv.map((job, idx) => (
         <ResumeLine
+          key={`resumeLine-${idx}`}
           jobTitle={job.jobTitle}
           startDate={job.startDate}
           endDate={job.endDate}

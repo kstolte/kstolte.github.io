@@ -1,15 +1,17 @@
 import React from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import LinkMui from '@mui/material/Link';
-import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
-import { makeStyles } from 'tss-react/mui';
+import Container from '@material-ui/core/Container';
+import Link from 'next/link';
+import Typography from '@material-ui/core/Typography';
+import LinkMui from '@material-ui/core/Link';
+import Twitter from '@material-ui/icons/Twitter';
+import LinkedIn from '@material-ui/icons/LinkedIn';
+import GitHub from '@material-ui/icons/GitHub';
+import { makeStyles } from '@material-ui/core/styles';
+import Section from 'components/Section';
+import { useDarkMode } from 'util/theme';
+import Image from 'next/image';
 
-import Section from './Section';
-import { Link } from './../util/router';
-import { useDarkMode } from './../util/theme';
-
-const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles((theme) => ({
   sticky: {
     marginTop: 'auto',
   },
@@ -69,7 +71,7 @@ const useStyles = makeStyles()((theme) => ({
 }));
 
 function Footer(props) {
-  const { classes } = useStyles();
+  const classes = useStyles();
 
   const darkMode = useDarkMode();
   // Use inverted logo if specified
@@ -88,28 +90,22 @@ function Footer(props) {
       <Container>
         <div className={classes.wrapper}>
           <div className={`${classes.item} ${classes.left}`}>
-            <Link to="/">
-              <img src={logo} alt="Logo" className={classes.brand} />
+            <Link href="/">
+              <a>
+                <Image src={logo} alt="Logo" className={classes.brand} />
+              </a>
             </Link>
           </div>
           <div
             className={`${classes.item} ${classes.right} ${classes.smallLinks}`}
           >
             <Typography>
-              <LinkMui component={Link} to="/about" className={classes.link} underline="hover">
-                About
-              </LinkMui>
-              <LinkMui component={Link} to="/contact" className={classes.link} underline="hover">
-                Contact
-              </LinkMui>
-              {/* <LinkMui
-                href="https://medium.com"
-                target="_blank"
-                rel="noreferrer"
-                className={classes.link}
-              >
-                Blog
-              </LinkMui> */}
+              <Link href="/about" passHref={true}>
+                <LinkMui className={classes.link}>About</LinkMui>
+              </Link>
+              <Link href="/contact" passHref={true}>
+                <LinkMui className={classes.link}>Contact</LinkMui>
+              </Link>
             </Typography>
           </div>
           <div className={`${classes.item} ${classes.right} ${classes.social}`}>
@@ -140,12 +136,6 @@ function Footer(props) {
           </div>
           <span className={`${classes.item} ${classes.legal} ${classes.left}`}>
             {props.copyright}
-            {/* <LinkMui component={Link} to="/legal/terms-of-service">
-              Terms
-            </LinkMui>
-            <LinkMui component={Link} to="/legal/privacy-policy">
-              Privacy
-            </LinkMui> */}
           </span>
         </div>
       </Container>

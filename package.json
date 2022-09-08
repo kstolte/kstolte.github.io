@@ -1,6 +1,6 @@
 {
   "name": "kstolte-homepage",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "homepage": "https://keithstolte.io",
   "private": true,
   "keywords": [
@@ -8,50 +8,24 @@
   ],
   "dependencies": {
     "@analytics/google-analytics": "^1.0.3",
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "@mui/icons-material": "^5.10.3",
-    "@mui/lab": "^5.0.0-alpha.98",
-    "@mui/material": "^5.10.4",
+    "@material-ui/core": "4.12.3",
+    "@material-ui/icons": "4.11.2",
+    "@material-ui/lab": "4.0.0-alpha.60",
     "analytics": "^0.8.1",
-    "history": "4.10.1",
-    "query-string": "7.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "6.1.0",
-    "react-hook-form": "^7.34.2",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "5.0.1",
-    "react-snap": "^1.23.0",
-    "tss-react": "^4.1.3",
+    "next": "12.2.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "6.15.1",
     "use-local-storage-state": "9.0.2"
   },
   "scripts": {
-    "postbuild": "react-snap",
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "echo 'keithstolte.io' > ./build/CNAME && gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "proxy": "http://localhost:8080",
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "eslint": "^8.23.0",
+    "eslint-config-next": "12.3.0"
   }
 }
