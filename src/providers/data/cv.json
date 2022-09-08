@@ -53,7 +53,7 @@
       "GraphQL",
       "Stripe",
       "Webhooks",
-      "MacOS"
+      "MacOS","Microsoft Azure", "Google Workspace"
     ]
   },
   {
@@ -83,7 +83,7 @@
       "REST APIs",
       "GraphQL",
       "Windows",
-      "MacOS"
+      "MacOS","Microsoft Azure", "Google Workspace"
     ]
   },
   {
@@ -106,7 +106,9 @@
       "MSSQL Server",
       ".Net Framework",
       "PowerShell",
-      "Windows"
+      "Windows",
+      "Office 365",
+      "Google Workspace","Microsoft Azure", "Google Workspace"
     ]
   },
   {
@@ -122,6 +124,27 @@
       "Ensure proper training of members and guide members through a multifaceted training plan that focuses on all hazards response."
     ],
     "jobTechnologies": ["SharePoint", "Windows", "MacOS"]
+  },
+  {
+    "cvOnly": true,
+    "jobTitle": "Technology Committee Chair",
+    "employer": "Plaza Volunteer Rescue Squad",
+    "location": "Virginia Beach, VA",
+    "startDate": "2012-11-20",
+    "endDate": "2018-01-01",
+    "jobSummary": "Implemented and maintained the Software items in the Service Portfolio and Pipeline. This includes tier 2 & 3 end user support, diagnosing software problems and scheduled maintenance. In addition, they provide advanced system administration/configuration tasks and consult customers on proposed changes within In House (Custom) Applications and third-party COTS software products.",
+    "jobRoles": [
+      "Setup and maintained an Office 365 Environment consisting of email, internal SharePoint Sites and an external SharePoint website for 80+ users.",
+      "Setup and maintained an online website donation process that generated additional revenue donation.",
+      "Assisted with researching and procuring an ambulance at a purchase price of $235,000.",
+      "Volunteered 56 hours per month providing emergency medical services on an ambulance and heavy rescue truck."
+    ],
+    "jobTechnologies": [
+      "SharePoint",
+      "Office 365",
+      "Windows",
+      "MacOS"
+    ]
   },
   {
     "cvOnly": false,
