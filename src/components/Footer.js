@@ -3,13 +3,13 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import LinkMui from '@mui/material/Link';
 import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 
 import Section from './Section';
 import { Link } from './../util/router';
 import { useDarkMode } from './../util/theme';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   sticky: {
     marginTop: 'auto',
   },
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Footer(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const darkMode = useDarkMode();
   // Use inverted logo if specified

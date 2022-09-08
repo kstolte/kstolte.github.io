@@ -3,11 +3,11 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   itemsContainer: {
     marginTop: 60,
   },
@@ -86,7 +86,7 @@ const items = [
 ];
 
 function FeaturesSection(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   return (
     <Section

@@ -6,11 +6,11 @@ import CardContent from '@mui/material/CardContent';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   card: {
     display: 'flex',
     flexDirection: 'column',
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function TeamBiosSection(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const items = [
     {

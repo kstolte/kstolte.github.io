@@ -1,10 +1,10 @@
 import React from 'react';
 import { Chip, Grid, Typography, Box } from '@mui/material';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 
 import Section from '../../Section';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   itemsContainer: {
     marginTop: 60,
   },
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const ResumeLine = (props) => {
-  const classes = useStyles();
+  const { classes } = useStyles();
   const {
     jobTitle,
     startDate,
