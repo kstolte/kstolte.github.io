@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { Button, Container } from '@mui/material';
+import { Button } from '@mui/material';
 
 import cvRecords from '../providers/data/cv.json';
 
@@ -23,17 +23,16 @@ function ResumeCvPage(_props) {
   return (
     <>
       <Meta title="Résume / CV - Keith Stolte" />
-      <Container>
-        <Button
-          variant="outlined"
-          onClick={showLongShort}
-          // endIcon={<LoupeIcon />}
-          fullWidth={true}
-        >
-          {buttonText}
-        </Button>
-        <Resume cv={fullCV ? cvRecords : resume} />
-      </Container>
+      <Button
+        variant="outlined"
+        color="primary"
+        size="large"
+        onClick={showLongShort}
+        fullWidth={true}
+      >
+        {buttonText}
+      </Button>
+      <Resume cv={fullCV ? cvRecords : resume} />
     </>
   );
 }
