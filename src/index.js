@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 const rootElement = document.getElementById('root');
 
 if (rootElement.hasChildNodes()) {
-  hydrateRoot(<App />, rootElement);
+  hydrateRoot(rootElement, <App />);
 } else {
   const root = createRoot(rootElement); // createRoot(container!) if you use TypeScript
   root.render(<App />);
