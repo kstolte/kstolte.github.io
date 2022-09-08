@@ -1,7 +1,7 @@
 import React from 'react';
-import Meta from './../components/Meta';
-import HeroSection2 from './../components/HeroSection2';
-import PodCastsSection from './../components/PodCastsSection';
+import Meta from 'components/Meta';
+import HeroSection2 from 'components/HeroSection2';
+import PodCastsSection from 'components/PodCastsSection';
 
 function AboutPage(_props) {
   return (

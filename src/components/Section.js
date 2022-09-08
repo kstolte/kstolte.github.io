@@ -1,11 +1,11 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import { emphasize } from '@mui/material/styles';
-import { makeStyles } from 'tss-react/mui';
-import BackgroundImage from './BackgroundImage';
-import { capitalize } from '@mui/material/utils';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
+import { emphasize } from '@material-ui/core/styles/colorManipulator';
+import capitalize from '@material-ui/core/utils/capitalize';
+import BackgroundImage from 'components/BackgroundImage';
 
-const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     position: 'relative',
     // Ensure child <Container> is above background
@@ -50,7 +50,7 @@ const useStyles = makeStyles()((theme) => ({
 }));
 
 function Section(props) {
-  const { classes } = useStyles();
+  const classes = useStyles();
 
   const {
     bgColor = 'default',

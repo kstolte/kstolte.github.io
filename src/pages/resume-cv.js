@@ -1,10 +1,10 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { Button, Container } from '@mui/material';
+import { Button, Container } from '@material-ui/core';
 
-import cvRecords from '../providers/data/cv.json';
+import cvRecords from 'providers/data/cv.json';
 
-import Meta from './../components/Meta';
-import Resume from './../components/resume';
+import Meta from 'components/Meta';
+import Resume from 'components/resume';
 
 const resume = cvRecords.filter((val) => !val.cvOnly);
 

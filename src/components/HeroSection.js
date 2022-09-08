@@ -1,20 +1,21 @@
 import React from 'react';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import { makeStyles } from 'tss-react/mui';
-import Section from './Section';
-import SectionHeader from './SectionHeader';
-import { Link } from './../util/router';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
+import Link from 'next/link';
+import { makeStyles } from '@material-ui/core/styles';
+import Section from 'components/Section';
+import SectionHeader from 'components/SectionHeader';
+import Image from 'next/image';
 
-const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles((theme) => ({
   // Increase <Container> padding so it's
   // at least half of <Grid> spacing to
   // avoid horizontal scroll on mobile.
   // See https://material-ui.com/components/grid/#negative-margin
   container: {
-    padding: `0 ${theme.spacing(3)}`,
+    padding: `0 ${theme.spacing(3)}px`,
   },
   image: {
     margin: '0 auto',
@@ -26,7 +27,7 @@ const useStyles = makeStyles()((theme) => ({
 }));
 
 function HeroSection(props) {
-  const { classes } = useStyles();
+  const classes = useStyles();
 
   return (
     <Section
@@ -44,20 +45,20 @@ function HeroSection(props) {
                 subtitle={props.subtitle}
                 size={4}
               />
-              <Button
-                component={Link}
-                to={props.buttonPath}
-                variant="contained"
-                size="large"
-                color={props.buttonColor}
-              >
-                {props.buttonText}
-              </Button>
+              <Link href={props.buttonPath} passHref={true}>
+                <Button
+                  variant="contained"
+                  size="large"
+                  color={props.buttonColor}
+                >
+                  {props.buttonText}
+                </Button>
+              </Link>
             </Box>
           </Grid>
           <Grid item={true} xs={12} md={true}>
             <figure>
-              <img
+              <Image
                 src={props.image}
                 alt="illustration"
                 className={classes.image}

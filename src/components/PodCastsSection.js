@@ -1,16 +1,16 @@
 import React from 'react';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import Box from '@mui/material/Box';
-import Avatar from '@mui/material/Avatar';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { makeStyles } from 'tss-react/mui';
-import Section from './Section';
-import SectionHeader from './SectionHeader';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import Box from '@material-ui/core/Box';
+import Avatar from '@material-ui/core/Avatar';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Section from 'components/Section';
+import SectionHeader from 'components/SectionHeader';
 
-const useStyles = makeStyles()((theme) => ({
+const useStyles = makeStyles((theme) => ({
   avatar: {
     width: theme.spacing(10),
     height: theme.spacing(10),
@@ -18,7 +18,7 @@ const useStyles = makeStyles()((theme) => ({
 }));
 
 function PodCastsSection(props) {
-  const { classes } = useStyles();
+  const classes = useStyles();
 
   const items = [
     {
@@ -70,9 +70,9 @@ function PodCastsSection(props) {
                 </Box>
                 <CardContent>
                   <Box textAlign="center">
-                    <Typography variant="body1" component="p">
+                    {/* <Typography variant="body1" component="p">
                       "{item.testimonial}"
-                    </Typography>
+                    </Typography> */}
                     <Box mt={3}>
                       <Typography variant="body2" component="p">
                         {item.name}
