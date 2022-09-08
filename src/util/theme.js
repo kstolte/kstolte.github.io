@@ -104,16 +104,18 @@ const themeConfig = {
 
 function getTheme(name) {
   // Create MUI theme from themeConfig
-  return createTheme(adaptV4Theme({
-    ...themeConfig[name],
-    // Merge in common values
-    ...themeConfig.common,
-    overrides: {
-      // Merge overrides
-      ...(themeConfig[name] && themeConfig[name].overrides),
-      ...(themeConfig.common && themeConfig.common.overrides),
-    },
-  }));
+  return createTheme(
+    adaptV4Theme({
+      ...themeConfig[name],
+      // Merge in common values
+      ...themeConfig.common,
+      overrides: {
+        // Merge overrides
+        ...(themeConfig[name] && themeConfig[name].overrides),
+        ...(themeConfig.common && themeConfig.common.overrides),
+      },
+    })
+  );
 }
 
 // Create a local storage hook for dark mode preference

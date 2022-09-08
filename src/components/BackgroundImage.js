@@ -1,7 +1,7 @@
 import React from 'react';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   root: {
     content: '',
     backgroundPosition: 'center center',
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function BackgroundImage(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const { image, opacity, ...otherProps } = props;
 

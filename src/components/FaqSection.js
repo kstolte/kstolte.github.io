@@ -5,11 +5,11 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   accordion: {
     // Remove shadow
     boxShadow: 'none',
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function FaqSection(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const items = [
     {

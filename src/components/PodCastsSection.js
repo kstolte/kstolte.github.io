@@ -6,11 +6,11 @@ import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   avatar: {
     width: theme.spacing(10),
     height: theme.spacing(10),
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function PodCastsSection(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const items = [
     {

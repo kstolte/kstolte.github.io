@@ -1,9 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   root: {
     // Add bottom margin if element below
     '&:not(:last-child)': {
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SectionHeader(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const { subtitle, title, size, className, ...otherProps } = props;
 

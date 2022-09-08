@@ -3,12 +3,12 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
 import { Link } from './../util/router';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   // Increase <Container> padding so it's
   // at least half of <Grid> spacing to
   // avoid horizontal scroll on mobile.
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function HeroSection(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   return (
     <Section

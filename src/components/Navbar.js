@@ -12,12 +12,12 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import makeStyles from '@mui/styles/makeStyles';
+import { makeStyles } from 'tss-react/mui';
 import Section from './Section';
 import { Link } from './../util/router';
 import { useDarkMode } from './../util/theme';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()((theme) => ({
   logo: {
     height: 28,
     marginRight: theme.spacing(2),
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Navbar(props) {
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const darkMode = useDarkMode();
   const [drawerOpen, setDrawerOpen] = useState(false);
