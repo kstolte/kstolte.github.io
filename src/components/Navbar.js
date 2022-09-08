@@ -49,7 +49,13 @@ function Navbar(props) {
           <Toolbar>
             <Link href="/">
               <a>
-                <Image src={logo} alt="Logo" className={classes.logo} />
+                <Image
+                  src={logo}
+                  alt="Logo"
+                  width={120}
+                  height={28}
+                  className={classes.logo}
+                />
               </a>
             </Link>
             <div className={classes.spacer} />

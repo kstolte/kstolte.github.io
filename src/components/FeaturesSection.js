@@ -135,6 +135,8 @@ function FeaturesSection(props) {
                     src={item.image}
                     alt={item.title}
                     className={classes.image}
+                    width={300}
+                    height={250.6875}
                   />
                 </figure>
               </Grid>

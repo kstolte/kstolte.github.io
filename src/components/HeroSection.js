@@ -59,6 +59,8 @@ function HeroSection(props) {
           <Grid item={true} xs={12} md={true}>
             <figure>
               <Image
+                width={472}
+                height={428}
                 src={props.image}
                 alt="illustration"
                 className={classes.image}
