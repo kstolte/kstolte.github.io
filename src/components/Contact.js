@@ -11,7 +11,12 @@ import contact from './../util/contact';
 function Contact(props) {
   const [pending, setPending] = useState(false);
   const [formAlert, setFormAlert] = useState(null);
-  const { handleSubmit, register, errors, reset } = useForm();
+  const {
+    handleSubmit,
+    register,
+    reset,
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = (data) => {
     // Show pending indicator
@@ -61,7 +66,7 @@ function Contact(props) {
                 error={errors.name ? true : false}
                 helperText={errors.name && errors.name.message}
                 fullWidth={true}
-                inputRef={register({
+                {...register('name', {
                   required: 'Please enter your name',
                 })}
               />
@@ -77,7 +82,7 @@ function Contact(props) {
               error={errors.email ? true : false}
               helperText={errors.email && errors.email.message}
               fullWidth={true}
-              inputRef={register({
+              {...register('email', {
                 required: 'Please enter your email',
               })}
             />
@@ -93,7 +98,7 @@ function Contact(props) {
               error={errors.message ? true : false}
               helperText={errors.message && errors.message.message}
               fullWidth={true}
-              inputRef={register({
+              {...register('message', {
                 required: 'Please enter a message',
               })}
             />
