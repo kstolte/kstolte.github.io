@@ -1,6 +1,6 @@
 import React from 'react';
-import { Chip, Grid, Typography, Box } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Chip, Grid, Typography, Box } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 
 import Section from '../../Section';
 
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 
     // Spacing between rows
     '&:not(:last-child)': {
-      marginBottom: `${theme.spacing(3)}px`,
+      marginBottom: theme.spacing(3),
     },
   },
   figure: {

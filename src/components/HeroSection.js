@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import makeStyles from '@mui/styles/makeStyles';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
 import { Link } from './../util/router';
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   // avoid horizontal scroll on mobile.
   // See https://material-ui.com/components/grid/#negative-margin
   container: {
-    padding: `0 ${theme.spacing(3)}px`,
+    padding: `0 ${theme.spacing(3)}`,
   },
   image: {
     margin: '0 auto',

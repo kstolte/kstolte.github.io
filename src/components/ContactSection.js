@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import Container from '@mui/material/Container';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
 import Contact from './Contact';
