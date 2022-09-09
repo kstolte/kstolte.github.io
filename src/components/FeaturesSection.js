@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Section from 'components/Section';
 import SectionHeader from 'components/SectionHeader';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const useStyles = makeStyles((theme) => ({
   itemsContainer: {
@@ -53,19 +54,9 @@ function FeaturesSection(props) {
     },
     {
       title: 'Shift Left / Fail Fast',
-      description: `By shifting left this includes 
-  
-      - Writing tests that reflect real world usage patterns.
-        - Prevents Regressions when coupled with CI workflows.
-        - If a bug or feature is complicated to set up manually through the interface it can be much faster to iterate using a test. This allows for automated build up/ tear down of the scenarios and the ability to debug a known state.
-          - If you encounter a bug that is difficult to replicate, think through the ways of how you could force the scenario to happen repeatidly. During this process you will have better clarity of what other downfalls might happen due to a change or what is currently uncaught in existing testing methods. 
-      - Doing Design Mocks
-        - Specifically UI mockups to prevent theoretical conversations about how the flow would work. No two people have the same concept of what something will look like based on a discussion.
-        - This Design mocks will also inform or highlight other usage scenarios to make a stronger product. Lead the team to move towards collaborating during the mocking phase so that everyone stays on the same page. Then release the mock to stakeholders and get feedback. Consider this feedback and do not bok at it.
-      - Use A/B Testing
-        - compare the performance of the UI and back end changes in a structured manner.
-        - Look for the same things across both ends of the change.`,
+      description: ``,
       image: 'https://uploads.divjoy.com/undraw-personal_settings_kihd.svg',
+      learnMoreLink: '/blog/post/shift-left',
     },
     {
       title: 'Detail Oriented',
@@ -127,6 +118,9 @@ function FeaturesSection(props) {
                   <Typography variant="subtitle1">
                     {item.description}
                   </Typography>
+                  {item.learnMoreLink && (
+                    <Link href={item.learnMoreLink}>Learn More</Link>
+                  )}
                 </Box>
               </Grid>
               <Grid item={true} xs={12} md={6}>
