@@ -76,6 +76,9 @@ function Navbar(props) {
               <Button component="a" href="/resume-cv" color="inherit">
                 Résume / CV
               </Button>
+              <Button component="a" href="/blog" color="inherit">
+                Blog
+              </Button>
 
               <IconButton
                 color="inherit"
@@ -104,6 +107,9 @@ function Navbar(props) {
           </ListItem>
           <ListItem component="a" href="/resume-cv" button={true}>
             <ListItemText>Résume / CV</ListItemText>
+          </ListItem>
+          <ListItem component="a" href="/blog" button={true}>
+            <ListItemText>Blog</ListItemText>
           </ListItem>
           <ListItem>
             <IconButton

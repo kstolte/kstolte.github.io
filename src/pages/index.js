@@ -3,7 +3,7 @@ import Meta from 'components/Meta';
 import HeroSection from 'components/HeroSection';
 import FeaturesSection from 'components/FeaturesSection';
 
-function IndexPage(props) {
+function IndexPage(_props) {
   return (
     <>
       <Meta />
