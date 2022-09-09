@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { Typography } from '@material-ui/core';
 
 import { getPostBySlug, getAllPosts } from 'util/blog-processing/api';
-import { markdownToHtml } from 'util/blog-processing/markdownToHtml';
+import { markdownToHtml } from 'util/blog-processing/markdownToHTML';
 
 import HeroSection2 from 'components/HeroSection2';
 import PostBody from 'components/LongContent';
