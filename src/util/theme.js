@@ -3,17 +3,19 @@ import {
   useTheme,
   createTheme,
   ThemeProvider as MuiThemeProvider,
-} from '@material-ui/core/styles';
-import * as colors from '@material-ui/core/colors';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+  StyledEngineProvider,
+  adaptV4Theme,
+} from '@mui/material/styles';
+import * as colors from '@mui/material/colors';
+import CssBaseline from '@mui/material/CssBaseline';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { createLocalStorageStateHook } from 'use-local-storage-state';
 
 const themeConfig = {
   // Light theme
   light: {
     palette: {
-      type: 'light',
+      mode: 'light',
       primary: {
         // Use hue from colors or hex
         main: colors.indigo['500'],
@@ -40,7 +42,7 @@ const themeConfig = {
   // Dark theme
   dark: {
     palette: {
-      type: 'dark',
+      mode: 'dark',
       primary: {
         // Same as in light but we could
         // adjust color hue if needed
@@ -102,7 +104,7 @@ const themeConfig = {
 
 function getTheme(name) {
   // Create MUI theme from themeConfig
-  return createTheme({
+  return createTheme(adaptV4Theme({
     ...themeConfig[name],
     // Merge in common values
     ...themeConfig.common,
@@ -111,7 +113,7 @@ function getTheme(name) {
       ...(themeConfig[name] && themeConfig[name].overrides),
       ...(themeConfig.common && themeConfig.common.overrides),
     },
-  });
+  }));
 }
 
 // Create a local storage hook for dark mode preference
@@ -152,21 +154,23 @@ export const ThemeProvider = (props) => {
   }, []);
 
   return (
-    <MuiThemeProvider theme={theme}>
-      {/* Set global MUI styles */}
-      <CssBaseline />
-      {props.children}
-    </MuiThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <MuiThemeProvider theme={theme}>
+        {/* Set global MUI styles */}
+        <CssBaseline />
+        {props.children}
+      </MuiThemeProvider>
+    </StyledEngineProvider>
   );
 };
 
 // Hook for detecting dark mode and toggling between light/dark
-// More convenient than reading theme.palette.type from useTheme
+// More convenient than reading theme.palette.mode from useTheme
 export function useDarkMode() {
   // Get current Material UI theme
   const theme = useTheme();
   // Check if it's the dark theme
-  const isDarkMode = theme.palette.type === 'dark';
+  const isDarkMode = theme.palette.mode === 'dark';
   // Return object containing dark mode value and toggle function
   return { value: isDarkMode, toggle: theme.palette.toggle };
 }

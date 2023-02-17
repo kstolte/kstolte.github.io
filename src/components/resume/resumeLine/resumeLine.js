@@ -1,8 +1,8 @@
 import React from 'react';
 // import { Chip, Grid, Typography, Box } from '@mui/material';
-import { Chip, Grid, Typography, Box, Container } from '@material-ui/core';
+import { Chip, Grid, Typography, Box, Container } from '@mui/material';
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 import Section from '../../Section';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
 import 'util/analytics';
-import { ThemeProvider } from 'util/theme';
+import { ThemeProvider, StyledEngineProvider } from 'util/theme';
 
 // import IndexPage from './index';
 // import AboutPage from './about';

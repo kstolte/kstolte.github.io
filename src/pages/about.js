@@ -2,7 +2,7 @@ import React from 'react';
 import Meta from 'components/Meta';
 import Section from 'components/Section';
 import PodCastsSection from 'components/PodCastsSection';
-import { Container } from '@material-ui/core';
+import { Container } from '@mui/material';
 
 function AboutPage(_props) {
   return (
