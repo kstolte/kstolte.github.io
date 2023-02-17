@@ -22,23 +22,23 @@ function PodCastsSection(props) {
 
   const items = [
     {
-      avatar: 'https://uploads.divjoy.com/pravatar-150x-5.jpeg',
+      avatar: '/images/podcasts/99pi.png',
       name: '99% invisible',
     },
     {
-      avatar: 'https://uploads.divjoy.com/pravatar-150x-48.jpeg',
+      avatar: '/images/podcasts/sysk.jpg',
       name: 'Stuff You Should Know',
     },
     {
-      avatar: 'https://uploads.divjoy.com/pravatar-150x-12.jpeg',
+      avatar: '/images/podcasts/revisionistHistory.jpg',
       name: 'Revisionist History',
     },
     {
-      avatar: 'https://uploads.divjoy.com/pravatar-150x-12.jpeg',
+      avatar: '/images/podcasts/cautionaryTales.png',
       name: 'Cautionary Tales with Tim Harford',
     },
     {
-      avatar: 'https://uploads.divjoy.com/pravatar-150x-12.jpeg',
+      avatar: '/images/podcasts/hiddenbrain.webp',
       name: 'Hidden Brain',
     },
   ];
@@ -66,6 +66,7 @@ function PodCastsSection(props) {
                     src={item.avatar}
                     alt={item.name}
                     className={classes.avatar}
+                    variant="rounded"
                   />
                 </Box>
                 <CardContent>
