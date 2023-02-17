@@ -45,7 +45,7 @@ function HeroSection(props) {
                 subtitle={props.subtitle}
                 size={4}
               />
-              <Link href={props.buttonPath} passHref={true}>
+              <Link href={props.buttonPath} passHref={true} legacyBehavior>
                 <Button
                   variant="contained"
                   size="large"

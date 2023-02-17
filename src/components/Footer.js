@@ -95,25 +95,23 @@ function Footer(props) {
         <div className={classes.wrapper}>
           <div className={`${classes.item} ${classes.left}`}>
             <Link href="/">
-              <a>
-                <Image
-                  src={logo}
-                  alt="Logo"
-                  width={120}
-                  height={28}
-                  className={classes.brand}
-                />
-              </a>
+              <Image
+                src={logo}
+                alt="Logo"
+                width={120}
+                height={28}
+                className={classes.brand}
+              />
             </Link>
           </div>
           <div
             className={`${classes.item} ${classes.right} ${classes.smallLinks}`}
           >
             <Typography>
-              <Link href="/about" passHref={true}>
+              <Link href="/about" passHref={true} legacyBehavior>
                 <LinkMui className={classes.link}>About</LinkMui>
               </Link>
-              <Link href="/contact" passHref={true}>
+              <Link href="/contact" passHref={true} legacyBehavior>
                 <LinkMui className={classes.link}>Contact</LinkMui>
               </Link>
             </Typography>

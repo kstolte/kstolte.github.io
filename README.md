@@ -51,7 +51,7 @@ function MyComponent() {
   // Navigate with the <Link> component or with router.push()
   return (
     <div>
-      <Link href="/about"><a>About</a></Link>
+      <Link href="/about">About</Link>
       <button onClick={(e) => router.push("/about")}>About</button>
     </div>
   );

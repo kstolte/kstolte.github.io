@@ -8,7 +8,7 @@ import { getAllPosts } from 'util/blog-processing/api';
 const PostBlurb = ({ post }) => (
   <>
     <Typography variant="h5">
-      <Link href={`/blog/post/${post.slug}`}>{post.title}</Link>
+      <Link href={`/blog/post/${post.slug}`} legacyBehavior>{post.title}</Link>
     </Typography>
     <Typography variant="caption">{post.excerpt}</Typography>
   </>

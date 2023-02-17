@@ -48,15 +48,13 @@ function Navbar(props) {
         <Container disableGutters={true}>
           <Toolbar>
             <Link href="/">
-              <a>
-                <Image
-                  src={logo}
-                  alt="Logo"
-                  width={120}
-                  height={28}
-                  className={classes.logo}
-                />
-              </a>
+              <Image
+                src={logo}
+                alt="Logo"
+                width={120}
+                height={28}
+                className={classes.logo}
+              />
             </Link>
             <div className={classes.spacer} />
             <Hidden smUp={true} implementation="css">
