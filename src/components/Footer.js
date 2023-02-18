@@ -31,11 +31,11 @@ const useStyles = makeStyles((theme) => ({
   },
   brand: {
     display: 'block',
-    height: 32,
+    height: 50,
     width: '120px',
     'min-width': '120px',
     'min-height': '24px',
-    'max-height': '48px',
+    'max-height': '50px',
   },
   social: {
     alignItems: 'flex-end',
@@ -99,7 +99,7 @@ function Footer(props) {
                 src={logo}
                 alt="Logo"
                 width={120}
-                height={28}
+                height={50}
                 className={classes.brand}
               />
             </Link>
