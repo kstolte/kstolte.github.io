@@ -1,19 +1,33 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import Section from 'components/Section';
 import SectionHeader from 'components/SectionHeader';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const useStyles = makeStyles((theme) => ({
-  itemsContainer: {
+const PREFIX = 'FeaturesSection';
+
+const classes = {
+  itemsContainer: `${PREFIX}-itemsContainer`,
+  row: `${PREFIX}-row`,
+  figure: `${PREFIX}-figure`,
+  image: `${PREFIX}-image`
+};
+
+const StyledSection = styled(Section)((
+  {
+    theme
+  }
+) => ({
+  [`& .${classes.itemsContainer}`]: {
     marginTop: 60,
   },
-  row: {
+
+  [`& .${classes.row}`]: {
     // Reverse every other row
     '&:nth-of-type(even)': {
       flexDirection: 'row-reverse',
@@ -21,21 +35,23 @@ const useStyles = makeStyles((theme) => ({
 
     // Spacing between rows
     '&:not(:last-child)': {
-      marginBottom: `${theme.spacing(3)}px`,
+      marginBottom: theme.spacing(3),
     },
   },
-  figure: {
+
+  [`& .${classes.figure}`]: {
     maxWidth: 300,
     margin: '30px auto',
   },
-  image: {
+
+  [`& .${classes.image}`]: {
     height: 'auto',
     maxWidth: '100%',
-  },
+  }
 }));
 
 function FeaturesSection(props) {
-  const classes = useStyles();
+
 
   const items = [
     {
@@ -78,7 +94,7 @@ function FeaturesSection(props) {
   ];
 
   return (
-    <Section
+    <StyledSection
       bgColor={props.bgColor}
       size={props.size}
       bgImage={props.bgImage}
@@ -138,7 +154,7 @@ function FeaturesSection(props) {
           ))}
         </Container>
       </Container>
-    </Section>
+    </StyledSection>
   );
 }
 

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head';
 
-import { Typography, Container } from '@material-ui/core';
+import { Typography, Container } from '@mui/material';
 
 import { getAllPosts } from 'util/blog-processing/api';
 

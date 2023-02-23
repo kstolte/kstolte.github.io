@@ -1,25 +1,42 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import { styled } from '@mui/material/styles';
+import Container from '@mui/material/Container';
 import Link from 'next/link';
-import Typography from '@material-ui/core/Typography';
-import LinkMui from '@material-ui/core/Link';
-import Twitter from '@material-ui/icons/Twitter';
-import LinkedIn from '@material-ui/icons/LinkedIn';
-import GitHub from '@material-ui/icons/GitHub';
-import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@mui/material/Typography';
+import LinkMui from '@mui/material/Link';
+import Twitter from '@mui/icons-material/Twitter';
+import LinkedIn from '@mui/icons-material/LinkedIn';
+import GitHub from '@mui/icons-material/GitHub';
 import Section from 'components/Section';
 import { useDarkMode } from 'util/theme';
 import Image from 'next/image';
 
-const useStyles = makeStyles((theme) => ({
-  sticky: {
+const PREFIX = 'Footer';
+
+const classes = {
+  sticky: `${PREFIX}-sticky`,
+  wrapper: `${PREFIX}-wrapper`,
+  item: `${PREFIX}-item`,
+  brand: `${PREFIX}-brand`,
+  social: `${PREFIX}-social`,
+  link: `${PREFIX}-link`,
+  left: `${PREFIX}-left`,
+  right: `${PREFIX}-right`,
+  smallLinks: `${PREFIX}-smallLinks`,
+  legal: `${PREFIX}-legal`,
+};
+
+const StyledSection = styled(Section)(({ theme }) => ({
+  [`& .${classes.sticky}`]: {
     marginTop: 'auto',
   },
-  wrapper: {
+
+  [`& .${classes.wrapper}`]: {
     display: 'flex',
     flexWrap: 'wrap',
   },
-  item: {
+
+  [`& .${classes.item}`]: {
     display: 'flex',
     flex: 'none',
     justifyContent: 'center',
@@ -29,42 +46,49 @@ const useStyles = makeStyles((theme) => ({
       flex: '50%',
     },
   },
-  brand: {
+
+  [`& .${classes.brand}`]: {
     display: 'block',
     height: 50,
     width: '120px',
-    'min-width': '120px',
-    'min-height': '24px',
-    'max-height': '50px',
+    minWidth: '120px',
+    minHeight: '24px',
+    maxHeight: '50px',
   },
-  social: {
+
+  [`& .${classes.social}`]: {
     alignItems: 'flex-end',
   },
-  link: {
+
+  [`& .${classes.link}`]: {
     color: 'inherit',
     lineHeight: 1,
     '&:not(:last-of-type)': {
       marginRight: '1.2rem',
     },
   },
-  left: {
+
+  [`& .${classes.left}`]: {
     [theme.breakpoints.up('sm')]: {
       justifyContent: 'flex-start',
     },
   },
-  right: {
+
+  [`& .${classes.right}`]: {
     [theme.breakpoints.up('sm')]: {
       justifyContent: 'flex-end',
     },
   },
+
   // Move links to end (bottom right)
   // Swaps position with social
-  smallLinks: {
+  [`& .${classes.smallLinks}`]: {
     [theme.breakpoints.up('sm')]: {
       order: 1,
     },
   },
-  legal: {
+
+  [`& .${classes.legal}`]: {
     opacity: 0.6,
     fontSize: '0.875rem',
     '& a': {
@@ -75,8 +99,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Footer(props) {
-  const classes = useStyles();
-
   const darkMode = useDarkMode();
   // Use inverted logo if specified
   // and we are in dark mode
@@ -84,7 +106,7 @@ function Footer(props) {
     props.logoInverted && darkMode.value ? props.logoInverted : props.logo;
 
   return (
-    <Section
+    <StyledSection
       bgColor={props.bgColor}
       size={props.size}
       bgImage={props.bgImage}
@@ -147,7 +169,7 @@ function Footer(props) {
           </span>
         </div>
       </Container>
-    </Section>
+    </StyledSection>
   );
 }
 

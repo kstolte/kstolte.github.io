@@ -1,8 +1,17 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
+const PREFIX = 'BackgroundImage';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
+const classes = {
+  root: `${PREFIX}-root`
+};
+
+const Root = styled('div\n')((
+  {
+    theme
+  }
+) => ({
+  [`& .${classes.root}`]: {
     content: '',
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
@@ -12,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
     position: 'absolute',
     zIndex: 0,
-  },
+  }
 }));
 
 function BackgroundImage(props) {
-  const classes = useStyles();
+
 
   const { image, opacity, ...otherProps } = props;
 

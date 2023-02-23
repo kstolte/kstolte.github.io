@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
-import Box from '@material-ui/core/Box';
-import Alert from '@material-ui/lab/Alert';
-import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import Box from '@mui/material/Box';
+import Alert from '@mui/material/Alert';
+import Grid from '@mui/material/Grid';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress';
 import { useForm } from 'react-hook-form';
 import contact from '../util/contact';
 
 function Contact(props) {
   const [pending, setPending] = useState(false);
   const [formAlert, setFormAlert] = useState(null);
-  const { handleSubmit, register, errors, reset } = useForm();
+  const {
+    handleSubmit,
+    register,
+    reset,
+
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = (data) => {
     // Show pending indicator
@@ -61,7 +67,7 @@ function Contact(props) {
                 error={errors.name ? true : false}
                 helperText={errors.name && errors.name.message}
                 fullWidth={true}
-                inputRef={register({
+                inputRef={register('name', {
                   required: 'Please enter your name',
                 })}
               />
@@ -77,7 +83,7 @@ function Contact(props) {
               error={errors.email ? true : false}
               helperText={errors.email && errors.email.message}
               fullWidth={true}
-              inputRef={register({
+              inputRef={register('email', {
                 required: 'Please enter your email',
               })}
             />
@@ -93,7 +99,7 @@ function Contact(props) {
               error={errors.message ? true : false}
               helperText={errors.message && errors.message.message}
               fullWidth={true}
-              inputRef={register({
+              inputRef={register('message', {
                 required: 'Please enter a message',
               })}
             />

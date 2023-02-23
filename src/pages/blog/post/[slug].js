@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 
 import { getPostBySlug, getAllPosts } from 'util/blog-processing/api';
 import { markdownToHtml } from 'util/blog-processing/markdownToHTML';
