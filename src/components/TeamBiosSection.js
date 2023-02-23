@@ -1,4 +1,5 @@
 import React from 'react';
+import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -6,28 +7,41 @@ import CardContent from '@mui/material/CardContent';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import makeStyles from '@mui/styles/makeStyles';
 import Section from 'components/Section';
 import SectionHeader from 'components/SectionHeader';
 
-const useStyles = makeStyles((theme) => ({
-  card: {
+const PREFIX = 'TeamBiosSection';
+
+const classes = {
+  card: `${PREFIX}-card`,
+  avatarWrapper: `${PREFIX}-avatarWrapper`,
+  avatar: `${PREFIX}-avatar`
+};
+
+const StyledSection = styled(Section)((
+  {
+    theme
+  }
+) => ({
+  [`& .${classes.card}`]: {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
   },
-  avatarWrapper: {
+
+  [`& .${classes.avatarWrapper}`]: {
     display: 'flex',
     justifyContent: 'center',
   },
-  avatar: {
+
+  [`& .${classes.avatar}`]: {
     width: theme.spacing(15),
     height: theme.spacing(15),
-  },
+  }
 }));
 
 function TeamBiosSection(props) {
-  const classes = useStyles();
+
 
   const items = [
     {
@@ -51,7 +65,7 @@ function TeamBiosSection(props) {
   ];
 
   return (
-    <Section
+    <StyledSection
       bgColor={props.bgColor}
       size={props.size}
       bgImage={props.bgImage}
@@ -99,7 +113,7 @@ function TeamBiosSection(props) {
           ))}
         </Grid>
       </Container>
-    </Section>
+    </StyledSection>
   );
 }
 

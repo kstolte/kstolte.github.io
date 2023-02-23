@@ -1,18 +1,34 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import { emphasize } from '@mui/material/styles';
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
 import BackgroundImage from 'components/BackgroundImage';
 import { capitalize } from '@mui/material/utils';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
+const PREFIX = 'Section';
+
+const classes = {
+  root: `${PREFIX}-root`,
+  subtitle: `${PREFIX}-subtitle`,
+};
+
+const StyledBox = styled(Box)(({ theme }) => ({
+  [`& .${classes.root}`]: {
     position: 'relative',
     // Ensure child <Container> is above background
     // image (if one is set with the bgImage prop).
     '& > .MuiContainer-root': {
       position: 'relative',
     },
+  },
+
+  [`& .${classes.subtitle}`]: {
+    // Subtitle text generally isn't very long
+    // so usually looks better to limit width.
+    maxWidth: 700,
+    // So we can have max-width but still
+    // have alignment controlled by text-align.
+    display: 'inline-block',
   },
 
   // Create color classes that set background color and determine
@@ -49,8 +65,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// const useStyles = makeStyles((theme) => ({}));
+
 function Section(props) {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   const {
     bgColor = 'default',
@@ -72,7 +90,7 @@ function Section(props) {
   }[size];
 
   return (
-    <Box
+    <StyledBox
       component="section"
       py={verticalPadding}
       className={
@@ -85,7 +103,7 @@ function Section(props) {
       {bgImage && <BackgroundImage image={bgImage} opacity={bgImageOpacity} />}
 
       {props.children}
-    </Box>
+    </StyledBox>
   );
 }
 
