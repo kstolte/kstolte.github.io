@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { styled } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,26 +14,39 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import makeStyles from '@mui/styles/makeStyles';
 import Section from 'components/Section';
 import { useDarkMode } from 'util/theme';
 import Image from 'next/image';
 
-const useStyles = makeStyles((theme) => ({
-  logo: {
+const PREFIX = 'Navbar';
+
+const classes = {
+  logo: `${PREFIX}-logo`,
+  drawerList: `${PREFIX}-drawerList`,
+  spacer: `${PREFIX}-spacer`
+};
+
+const StyledSection = styled(Section)((
+  {
+    theme
+  }
+) => ({
+  [`& .${classes.logo}`]: {
     height: 28,
     marginRight: theme.spacing(2),
   },
-  drawerList: {
+
+  [`& .${classes.drawerList}`]: {
     width: 250,
   },
-  spacer: {
+
+  [`& .${classes.spacer}`]: {
     flexGrow: 1,
-  },
+  }
 }));
 
 function Navbar(props) {
-  const classes = useStyles();
+
 
   const darkMode = useDarkMode();
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -43,7 +57,7 @@ function Navbar(props) {
     props.logoInverted && darkMode.value ? props.logoInverted : props.logo;
 
   return (
-    <Section bgColor={props.color} size="auto">
+    <StyledSection bgColor={props.color} size="auto">
       <AppBar position="static" color="transparent" elevation={0}>
         <Container disableGutters={true}>
           <Toolbar>
@@ -122,7 +136,7 @@ function Navbar(props) {
           </ListItem>
         </List>
       </Drawer>
-    </Section>
+    </StyledSection>
   );
 }
 

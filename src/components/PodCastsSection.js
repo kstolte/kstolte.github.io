@@ -1,4 +1,5 @@
 import React from 'react';
+import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -6,19 +7,28 @@ import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import makeStyles from '@mui/styles/makeStyles';
 import Section from 'components/Section';
 import SectionHeader from 'components/SectionHeader';
 
-const useStyles = makeStyles((theme) => ({
-  avatar: {
+const PREFIX = 'PodCastsSection';
+
+const classes = {
+  avatar: `${PREFIX}-avatar`
+};
+
+const StyledSection = styled(Section)((
+  {
+    theme
+  }
+) => ({
+  [`& .${classes.avatar}`]: {
     width: theme.spacing(10),
     height: theme.spacing(10),
-  },
+  }
 }));
 
 function PodCastsSection(props) {
-  const classes = useStyles();
+
 
   const items = [
     {
@@ -44,7 +54,7 @@ function PodCastsSection(props) {
   ];
 
   return (
-    <Section
+    <StyledSection
       bgColor={props.bgColor}
       size={props.size}
       bgImage={props.bgImage}
@@ -93,7 +103,7 @@ function PodCastsSection(props) {
           ))}
         </Grid>
       </Container>
-    </Section>
+    </StyledSection>
   );
 }
 

@@ -1,16 +1,29 @@
 import React from 'react';
+import { styled } from '@mui/material/styles';
 // import { Chip, Grid, Typography, Box } from '@mui/material';
 import { Chip, Grid, Typography, Box, Container } from '@mui/material';
 
-import makeStyles from '@mui/styles/makeStyles';
-
 import Section from '../../Section';
 
-const useStyles = makeStyles((theme) => ({
-  itemsContainer: {
+const PREFIX = 'ResumeLine';
+
+const classes = {
+  itemsContainer: `${PREFIX}-itemsContainer`,
+  row: `${PREFIX}-row`,
+  figure: `${PREFIX}-figure`,
+  image: `${PREFIX}-image`
+};
+
+const Root = styled('div')((
+  {
+    theme
+  }
+) => ({
+  [`& .${classes.itemsContainer}`]: {
     marginTop: 60,
   },
-  row: {
+
+  [`& .${classes.row}`]: {
     // // Reverse every other row
     // '&:nth-of-type(even)': {
     //   flexDirection: 'row-reverse',
@@ -21,18 +34,20 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: theme.spacing(3),
     },
   },
-  figure: {
+
+  [`& .${classes.figure}`]: {
     maxWidth: 300,
     margin: '30px auto',
   },
-  image: {
+
+  [`& .${classes.image}`]: {
     height: 'auto',
     maxWidth: '100%',
-  },
+  }
 }));
 
 export const ResumeLine = (props) => {
-  const classes = useStyles();
+
   const {
     jobTitle,
     startDate,
@@ -108,13 +123,13 @@ const TechnologyStack = (props) => {
   const { techStack } = props;
   if (!techStack) return null;
   return (
-    <div>
+    <Root>
       <Typography variant="subtitle1">Technology Stack</Typography>
       <div>
         {techStack.map((tech, idx) => (
           <Chip label={tech} key={idx} color="primary" />
         ))}
       </div>
-    </div>
+    </Root>
   );
 };

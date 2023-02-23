@@ -1,36 +1,48 @@
 import React from 'react';
+import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
-import makeStyles from '@mui/styles/makeStyles';
 import Section from 'components/Section';
 import SectionHeader from 'components/SectionHeader';
 import Image from 'next/image';
 
-const useStyles = makeStyles((theme) => ({
+const PREFIX = 'HeroSection';
+
+const classes = {
+  container: `${PREFIX}-container`,
+  image: `${PREFIX}-image`
+};
+
+const StyledSection = styled(Section)((
+  {
+    theme
+  }
+) => ({
   // Increase <Container> padding so it's
   // at least half of <Grid> spacing to
   // avoid horizontal scroll on mobile.
   // See https://material-ui.com/components/grid/#negative-margin
-  container: {
+  [`& .${classes.container}`]: {
     padding: `0 ${theme.spacing(3)}`,
   },
-  image: {
+
+  [`& .${classes.image}`]: {
     margin: '0 auto',
     maxWidth: 570,
     display: 'block',
     height: 'auto',
     width: '100%',
-  },
+  }
 }));
 
 function HeroSection(props) {
-  const classes = useStyles();
+
 
   return (
-    <Section
+    <StyledSection
       bgColor={props.bgColor}
       size={props.size}
       bgImage={props.bgImage}
@@ -69,7 +81,7 @@ function HeroSection(props) {
           </Grid>
         </Grid>
       </Container>
-    </Section>
+    </StyledSection>
   );
 }
 
