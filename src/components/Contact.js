@@ -11,7 +11,15 @@ import contact from '../util/contact';
 function Contact(props) {
   const [pending, setPending] = useState(false);
   const [formAlert, setFormAlert] = useState(null);
-  const { handleSubmit, register, errors, reset } = useForm();
+  const {
+    handleSubmit,
+    register,
+    reset,
+
+    formState: {
+      errors,
+    },
+  } = useForm();
 
   const onSubmit = (data) => {
     // Show pending indicator
