@@ -32,7 +32,7 @@ const StyledSection = styled(Section)((
   }
 ) => ({
   [`& .${classes.logo}`]: {
-    height: 28,
+    height: 50,
     marginRight: theme.spacing(2),
   },
 
@@ -66,7 +66,7 @@ function Navbar(props) {
                 src={logo}
                 alt="Logo"
                 width={120}
-                height={28}
+                height={50}
                 className={classes.logo}
               />
             </Link>

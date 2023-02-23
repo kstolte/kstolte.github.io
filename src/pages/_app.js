@@ -9,8 +9,8 @@ import { CacheProvider } from '@emotion/react';
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
-const logo = Object.freeze('https://uploads.divjoy.com/logo.svg');
-const logoInverted = Object.freeze('https://uploads.divjoy.com/logo-white.svg');
+const logo = Object.freeze('/logo-light.png');
+const logoInverted = Object.freeze('/logo-dark.png');
 
 function MyApp({
   Component,
