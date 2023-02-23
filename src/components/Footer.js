@@ -23,14 +23,10 @@ const classes = {
   left: `${PREFIX}-left`,
   right: `${PREFIX}-right`,
   smallLinks: `${PREFIX}-smallLinks`,
-  legal: `${PREFIX}-legal`
+  legal: `${PREFIX}-legal`,
 };
 
-const StyledSection = styled(Section)((
-  {
-    theme
-  }
-) => ({
+const StyledSection = styled(Section)(({ theme }) => ({
   [`& .${classes.sticky}`]: {
     marginTop: 'auto',
   },
@@ -55,9 +51,9 @@ const StyledSection = styled(Section)((
     display: 'block',
     height: 50,
     width: '120px',
-    'min-width': '120px',
-    'min-height': '24px',
-    'max-height': '50px',
+    minWidth: '120px',
+    minHeight: '24px',
+    maxHeight: '50px',
   },
 
   [`& .${classes.social}`]: {
@@ -99,12 +95,10 @@ const StyledSection = styled(Section)((
       color: 'inherit',
       marginLeft: '0.8rem',
     },
-  }
+  },
 }));
 
 function Footer(props) {
-
-
   const darkMode = useDarkMode();
   // Use inverted logo if specified
   // and we are in dark mode
