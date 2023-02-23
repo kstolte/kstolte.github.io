@@ -16,9 +16,7 @@ function Contact(props) {
     register,
     reset,
 
-    formState: {
-      errors,
-    },
+    formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
@@ -69,7 +67,7 @@ function Contact(props) {
                 error={errors.name ? true : false}
                 helperText={errors.name && errors.name.message}
                 fullWidth={true}
-                inputRef={register({
+                inputRef={register('name', {
                   required: 'Please enter your name',
                 })}
               />
@@ -85,7 +83,7 @@ function Contact(props) {
               error={errors.email ? true : false}
               helperText={errors.email && errors.email.message}
               fullWidth={true}
-              inputRef={register({
+              inputRef={register('email', {
                 required: 'Please enter your email',
               })}
             />
@@ -101,7 +99,7 @@ function Contact(props) {
               error={errors.message ? true : false}
               helperText={errors.message && errors.message.message}
               fullWidth={true}
-              inputRef={register({
+              inputRef={register('message', {
                 required: 'Please enter a message',
               })}
             />
