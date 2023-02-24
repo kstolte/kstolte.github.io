@@ -55,7 +55,7 @@
       "GraphQL",
       "Stripe",
       "Webhooks",
-      "MacOS","Microsoft Azure", "Google Workspace"
+      "macOS","Microsoft Azure", "Google Workspace"
     ]
   },
   {
@@ -85,7 +85,7 @@
       "REST APIs",
       "GraphQL",
       "Windows",
-      "MacOS","Microsoft Azure", "Google Workspace"
+      "macOS","Microsoft Azure", "Google Workspace"
     ]
   },
   {
@@ -125,7 +125,7 @@
       "Creating a schedule made up of multiple volunteers that provide varying availabilities.",
       "Ensure proper training of members and guide members through a multifaceted training plan that focuses on all hazards response."
     ],
-    "jobTechnologies": ["SharePoint", "Windows", "MacOS"]
+    "jobTechnologies": ["SharePoint", "Windows", "macOS"]
   },
   {
     "cvOnly": true,
@@ -145,7 +145,7 @@
       "SharePoint",
       "Office 365",
       "Windows",
-      "MacOS"
+      "macOS"
     ]
   },
   {
@@ -176,7 +176,7 @@
       "Microsoft Dynamics SL",
       "IIS",
       "Windows",
-      "MacOS"
+      "macOS"
     ]
   },
   {
@@ -207,7 +207,7 @@
       "Microsoft Dynamics SL",
       "IIS",
       "Windows",
-      "MacOS"
+      "macOS"
     ]
   },
   {
@@ -240,7 +240,7 @@
       "Maintained Excellent Customer Service with the Business Owners of Applications.",
       "Assisted with maintaining security permissions on SharePoint websites."
     ],
-    "jobTechnologies": ["Google Sheets", "Pro Tools", "MacOS"]
+    "jobTechnologies": ["Google Sheets", "Pro Tools", "macOS"]
   },
   {
     "cvOnly": true,
@@ -259,7 +259,7 @@
     "jobTechnologies": [
       "Google Sheets",
       "Pro Tools",
-      "MacOS",
+      "macOS",
       "Yamaha LS9",
       "Q-Lab"
     ]
