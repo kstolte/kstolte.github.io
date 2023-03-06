@@ -16,7 +16,7 @@
     "@mui/lab": "^5.0.0-alpha.120",
     "@mui/material": "^5.11.9",
     "@mui/styled-engine-sc": "^5.11.9",
-    "@mui/system": "^5.11.9",
+    "@mui/system": "^5.11.12",
     "analytics": "^0.8.1",
     "gray-matter": "^4.0.3",
     "next": "^13.2.3",
