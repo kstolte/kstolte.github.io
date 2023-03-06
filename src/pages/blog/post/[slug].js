@@ -9,6 +9,7 @@ import { markdownToHtml } from 'util/blog-processing/markdownToHTML';
 import HeroSection2 from 'components/HeroSection2';
 import PostBody from 'components/LongContent';
 import Container from 'components/Section';
+import Section from 'components/Section';
 
 // type Props = {
 //   post: PostType
@@ -23,31 +24,33 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <Container>
-      {router.isFallback ? (
-        <Typography>Loading…</Typography>
-      ) : (
-        <>
-          <article className="mb-32">
-            <Head>
-              <title>{post.title} | KeithStolte.io | Blog</title>
-              <meta property="og:image" content={post.ogImage.url} />
-            </Head>
-            <HeroSection2
-              bgColor="primary"
-              size="large"
-              bgImage={post.coverImage}
-              bgImageOpacity={0.2}
-              title={post.title}
-              subtitle={`${new Date(post.date).toLocaleDateString()}`}
-            />
-            <PostBody>
-              <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
-            </PostBody>
-          </article>
-        </>
-      )}
-    </Container>
+    <Section>
+      <Container>
+        {router.isFallback ? (
+          <Typography>Loading…</Typography>
+        ) : (
+          <>
+            <article className="mb-32">
+              <Head>
+                <title>{post.title} | KeithStolte.io | Blog</title>
+                <meta property="og:image" content={post.ogImage.url} />
+              </Head>
+              <HeroSection2
+                bgColor="primary"
+                size="large"
+                bgImage={post.coverImage}
+                bgImageOpacity={0.2}
+                title={post.title}
+                subtitle={`${new Date(post.date).toLocaleDateString()}`}
+              />
+              <PostBody>
+                <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+              </PostBody>
+            </article>
+          </>
+        )}
+      </Container>
+    </Section>
   );
 }
 
