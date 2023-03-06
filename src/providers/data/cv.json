@@ -6,11 +6,14 @@
     "location": "Norfolk, VA",
     "startDate": "2021-01-18",
     "endDate": null,
-    "jobSummary": "Lead and organize platform initiatives of an inventory management software solution.",
+    "jobSummary": "Lead and organize platform initiatives of an inventory management software solution for a scaled client portfolio ranging from local venues to stadiums and arenas.",
     "jobRoles": [
+      "Lead a team of seven software developers who specialize in APIs, mobile and web apps, and integrations.",
+      "Architect scalable and responsive solutions for all parts of the implementation and support.",
       "Cultivate and maintain partnerships with consulting agencies.",
       "Conceptualize, plan, and execute new features and technology into the software solution.",
-      "Create system integrations between Yellow Dog Inventory and third party systems."
+      "Create system integrations between Yellow Dog Inventory and third party systems.",
+      "Oversee successful deployments of integrations."
     ],
     "jobTechnologies": [
       "React",
@@ -67,7 +70,7 @@
     "endDate": "2021-01-18",
     "jobSummary": "Develop and maintain components of an inventory management software solution. The solution is based on a MSSQL database backend with a long-term support WinForms Client application and iOS/Android Applications.",
     "jobRoles": [
-      "Recent development has been based around new feature implementation in WinForms Client, React Web Apps, .Net Core API, iOS/Android Applications, and ExpressJS GraphQL server.",
+      "Implemented and developed new features in WinForms Client, React Web Apps, dotnet core API, iOS/Android Applications, and ExpressJS GraphQL server.",
       "Resolve all issues with software and final escalation point for end users.",
       "Conceptualize, plan, and execute new features and technology into the software solution.",
       "Create system integrations between Yellow Dog Inventory and third party systems.",
