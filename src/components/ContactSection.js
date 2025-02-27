@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Section from 'components/Section';
 import SectionHeader from 'components/SectionHeader';
-import Contact from 'components/Contact';
 
 function ContactSection(props) {
   return (
@@ -19,11 +18,11 @@ function ContactSection(props) {
           size={4}
           textAlign="center"
         />
-        <Contact
-          showNameField={props.showNameField}
-          buttonText={props.buttonText}
-          buttonColor={props.buttonColor}
-        />
+        <p>
+          Please contact me at{' '}
+          <a href="mailto:hello@keithstolte.io">hello@keithstolte.io</a>. I will
+          try to get back to you as soon as possible.
+        </p>
       </Container>
     </Section>
   );
