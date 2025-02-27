@@ -82,6 +82,13 @@ function Navbar(props) {
               </IconButton>
             </Hidden>
             <Hidden mdDown={true} implementation="css">
+              <Button
+                component="a"
+                href="https://keithstolte.io/toSql"
+                color="inherit"
+              >
+                To SQL Tool
+              </Button>
               <Button component="a" href="/about" color="inherit">
                 About
               </Button>
