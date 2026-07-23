@@ -57,39 +57,39 @@ function FeaturesSection(props) {
     {
       title: 'Be Curious',
       description: `I think that it is easier to think outside the box, when there is not a box. A little curiousity can go a long way in expanding your horizons. This ties directly into the Explore Tenant.
-        
+
         It's ok to be opinionated, but hold the opinions loosely.
         `,
-      image: 'https://uploads.divjoy.com/undraw-balloons_vxx5.svg',
+      image: '/images/features/be-curious.png',
     },
     {
       title: 'Data Driven',
       description:
         'Trust but verify. Know what the data being presented represents. Know how the data is being sourced and ensure that that pipeline is secure enough for the decisions made based on that data.',
-      image: 'https://uploads.divjoy.com/undraw-mind_map_cwng.svg',
+      image: '/images/features/data-driven.png',
     },
     {
       title: 'Shift Left / Fail Fast',
       description: ``,
-      image: 'https://uploads.divjoy.com/undraw-personal_settings_kihd.svg',
+      image: '/images/features/shift-left.png',
       learnMoreLink: '/blog/post/shift-left',
     },
     {
       title: 'Detail Oriented',
       description: 'Ask the probing questions. Be an active listener.',
-      image: 'https://uploads.divjoy.com/undraw-mind_map_cwng.svg',
+      image: '/images/features/detail-oriented.png',
     },
     {
       title: 'Explore',
       description:
         'Get out there and explore things, you never know what you might find or learn along the way.',
-      image: 'https://uploads.divjoy.com/undraw-balloons_vxx5.svg',
+      image: '/images/features/explore.png',
     },
     {
       title: 'Have fun',
       description:
         'Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.',
-      image: 'https://uploads.divjoy.com/undraw-having_fun_iais.svg',
+      image: '/images/features/have-fun.png',
     },
   ];
 
@@ -146,7 +146,7 @@ function FeaturesSection(props) {
                     alt={item.title}
                     className={classes.image}
                     width={300}
-                    height={250.6875}
+                    height={250}
                   />
                 </figure>
               </Grid>
