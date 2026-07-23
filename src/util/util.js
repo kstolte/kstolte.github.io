@@ -1,5 +1,3 @@
-import { useRef, useEffect } from 'react';
-
 // Make an API request to `/api/{path}`
 export function apiRequest(path, method = 'GET', data) {
   return fetch(`/api/${path}`, {
@@ -36,13 +34,4 @@ export function CustomError(code, message) {
   const error = new Error(message);
   error.code = code;
   return error;
-}
-
-// Hook that returns previous value of state
-export function usePrevious(state) {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = state;
-  });
-  return ref.current;
 }

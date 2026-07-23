@@ -9,7 +9,7 @@ import {
 import * as colors from '@mui/material/colors';
 import CssBaseline from '@mui/material/CssBaseline';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { createLocalStorageStateHook } from 'use-local-storage-state';
+import useLocalStorageState from 'use-local-storage-state';
 
 const themeConfig = {
   // Light theme
@@ -116,8 +116,14 @@ function getTheme(name) {
   }));
 }
 
-// Create a local storage hook for dark mode preference
-const useDarkModeStorage = createLocalStorageStateHook('isDarkMode');
+// Create a local storage hook for dark mode preference.
+// `use-local-storage-state` v20 replaced the `createLocalStorageStateHook`
+// factory with the `useLocalStorageState` hook; wrapping it keeps the same
+// `[value, setValue]` call signature used below.
+const useDarkModeStorage = () => {
+  const [value, setValue] = useLocalStorageState('isDarkMode');
+  return [value, setValue];
+};
 
 export const ThemeProvider = (props) => {
   // Get system dark mode preference
